@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>https://www.markuspad.com/404/index.html</loc>
+    <lastmod>2021-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.markuspad.com/index.html</loc>
+    <lastmod>2021-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.markuspad.com/about/index.html</loc>
+    <lastmod>2021-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.markuspad.com/research/index.html</loc>
+    <lastmod>2021-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+</urlset>
