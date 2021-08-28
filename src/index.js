@@ -9,14 +9,14 @@ function make_articles_table() {
 	let elem = document.getElementById("articles");
 	let table = document.createElement("TABLE");
 	table.className = "w3-table-all w3-striped w3-centered w3-hoverable";
-	let header = table.createTHead();
+	// let header = table.createTHead();
 	
 	for (let i = 1; i<ARTICLES.length; i++) {
 		let title = ARTICLES[i].title;
 		let inspire = ARTICLES[i].inspire;
 
-		let row = header.insertRow(-1);
-		row.className = "w3-hover-light-green"
+		let row = table.insertRow(-1);
+		row.className = "w3-hover-light-green w3-hover-text-white"
 		let cell = row.insertCell(-1);
 		let link = document.createElement('a');
 		link.href = "https://inspirehep.net/literature/" + inspire;
