@@ -12,7 +12,6 @@ mintoclevel = 2
 ignore = ["node_modules/"]
 
 # RSS (the website_{title, descr, url} must be defined to get RSS)
-generate_rss = true
 website_title = "MarkusPad"
 website_descr = "My Personal Professional Blog."
 website_url   = "https://www.markuspad.com/"
