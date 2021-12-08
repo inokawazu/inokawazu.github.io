@@ -2,14 +2,19 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1><a href="/">Markus Pad</a></h1>
-      <p class="lead">A Personal Professional Blog</p>
+      <!-- <p class="lead">A Personal Professional Blog</p> -->
     </div>
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item {{ispage index.html}}active{{end}}" href="/">Home</a>
       <a class="sidebar-nav-item {{ispage publications/*}}active{{end}}" href="/publications/">Publications</a>
       <a class="sidebar-nav-item {{ispage articles/*}}active{{end}}" href="/articles/">Articles</a>
     </nav>
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://github.com/inokawazu">iNSIPIRE({{fill inspirename}})</a>
+      <a class="sidebar-nav-item" href="https://github.com/inokawazu">GitHub({{fill ghusername}})</a>
+    </nav>
     <p>&copy; {{fill author}}.</p>
   </div>
 </div>
+
 <div class="content container">

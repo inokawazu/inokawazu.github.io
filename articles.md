@@ -1,3 +1,1 @@
 @def title = "Articles"
-
-\toc

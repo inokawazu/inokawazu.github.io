@@ -3,6 +3,8 @@ Add here global page variables to use throughout your website.
 -->
 +++
 author = "Markus Amano"
+ghusername = "inokawazu"
+inspirename= "M. G. Amano"
 mintoclevel = 2
 
 # Add here files or directories that should be ignored by Franklin, otherwise
