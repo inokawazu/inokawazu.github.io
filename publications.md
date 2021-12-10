@@ -20,9 +20,9 @@ for article in articles
   push!(art_auths, join(art_auth,", ", " and "))
 
   push!(titles, article["metadata"]["titles"][1]["title"])
-# pi = article["metadata"]["publication_info"][1]
-#  push!(pubyears, string(pi["year"]))
-#  push!(publinks, pi["journal_record"]["\$ref"])
+  # pi = article["metadata"]["publication_info"][1]
+  #  push!(pubyears, string(pi["year"]))
+  #  push!(publinks, pi["journal_record"]["\$ref"])
   push!(arxivdates, article["metadata"]["earliest_date"])
 end
 artdata = zip(art_auths, titles, arxivdates)
