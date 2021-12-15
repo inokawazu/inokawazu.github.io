@@ -1,7 +1,5 @@
 @def title = "Markus Pad"
 
-\tableofcontents
-
 # About Me
 
 
@@ -28,3 +26,6 @@ I want to try to share more stuff, so keep a look out for my more recent article
 </tr>
 </table>
 ~~~
+
+## Contact
+- {{fill contact_email}}

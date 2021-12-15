@@ -19,6 +19,7 @@ ignore = ["node_modules/"]
 website_title = "MarkusPad"
 website_descr = "My Personal Professional Blog."
 website_url   = "https://www.markuspad.com/"
+contact_email = "markus.a.amano[AT]gmail.com"
 +++
 
 <!--
