@@ -5,7 +5,7 @@ Add here global page variables to use throughout your website.
 +++
 author = "Markus Amano"
 ghusername = "inokawazu"
-inspirename= "M. G. Amano"
+inspirename= "Markus A.G. Amano"
 inspireid = 1778034
 mintoclevel = 2
 
