@@ -21,7 +21,7 @@ On you you will you can find several things of interest in the side such as my a
 I want to try to share more stuff, so keep a look out for my more recent articles and publications. 
 *This blurb NEEDS to be longer...*
 
-[CV PDF](/assets/build/cv.pdf)
+[CV PDF](/assets/cv.pdf)
 
 ~~~
 </td>
