@@ -21,7 +21,9 @@ Please check out my humble blog.
 CV and professional stuff is below and to the side.
 <!-- On you will you can find several things of interest in the side such as my articles and publications. -->
 <!-- I want to try to share more stuff, so keep a look out for my more recent articles and publications. --> 
-*This blurb NEEDS to be longer...*
+I am a postodoctoral fellow here at Henan University.
+My currently research topic is modeling hadron physics with the holographic principles, derived from string theory.
+I enjoy interesting mathematical puzzles and games.
 
 [CV PDF](/assets/cv.pdf)
 
