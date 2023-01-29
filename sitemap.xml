@@ -2,32 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://www.markuspad.com/publications/index.html</loc>
-    <lastmod>2023-01-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>https://www.markuspad.com/articles/index.html</loc>
-    <lastmod>2023-01-28</lastmod>
+    <lastmod>2023-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://www.markuspad.com/index.html</loc>
-    <lastmod>2023-01-28</lastmod>
+    <lastmod>2023-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://www.markuspad.com/404/index.html</loc>
-    <lastmod>2023-01-28</lastmod>
+    <lastmod>2023-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://www.markuspad.com/articles/shell/</loc>
-    <lastmod>2023-01-28</lastmod>
+    <lastmod>2023-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
