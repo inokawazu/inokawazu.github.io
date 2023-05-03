@@ -2,8 +2,6 @@
 
 # About Me
 
-
-
 ~~~
 <table>
 <tr>
