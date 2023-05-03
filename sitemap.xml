@@ -3,31 +3,37 @@
 
 <url>
     <loc>https://www.markuspad.com/publications/index.html</loc>
-    <lastmod>2023-02-09</lastmod>
+    <lastmod>2023-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.markuspad.com/articles/scale/index.html</loc>
+    <lastmod>2023-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://www.markuspad.com/articles/index.html</loc>
-    <lastmod>2023-02-09</lastmod>
+    <lastmod>2023-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://www.markuspad.com/index.html</loc>
-    <lastmod>2023-02-09</lastmod>
+    <lastmod>2023-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://www.markuspad.com/404/index.html</loc>
-    <lastmod>2023-02-09</lastmod>
+    <lastmod>2023-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://www.markuspad.com/articles/shell/</loc>
-    <lastmod>2023-02-09</lastmod>
+    <lastmod>2023-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
