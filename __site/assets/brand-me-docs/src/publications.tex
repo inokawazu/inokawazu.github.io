@@ -1,0 +1,54 @@
+\documentclass[fontsize=12pt]{article}
+
+% TODO: add stats <27-07-22, Markus A> %
+% TODO: add misc info about me <27-07-22, Markus A> %
+
+\usepackage{csvsimple}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{geometry}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Markus Amano CV}
+    }
+
+\geometry{
+  left=15mm,
+  right=15mm,
+  top=15mm,
+  bottom=15mm,
+}
+
+\begin{document}
+
+\begin{center}
+  \begin{tabularx}{\textwidth} { 
+      >{\raggedright\arraybackslash}X 
+    >{\raggedleft\arraybackslash}X  }
+    \huge Markus A.G. Amano & Publications\\
+    \hline
+    \href{https://inspirehep.net/authors/1778034}{iNSPIREHEP} & \\
+    Website:\url{https://markuspad.com/}& 
+    GitHub: \href{https://github.com/inokawazu}{inokawazu}\\
+    Email: markus.a.amano[at]gmail.com & \\
+  \end{tabularx}
+\end{center}
+
+\csvnames{publications}{title=\title,year=\year,arxiv=\arxiv,doi=\doi,journal=\journal}
+
+% degree,specialization,gradyear,entryyear,school,country,city
+\csvreader[publications]{data/publications.csv}{}{
+  \ifcsvstrcmp{\doi}{TBD}{}{
+  \textit{\year}\ -\ \textbf{\title}\\
+  \ifcsvstrcmp{\doi}{TBD}{}{\href{https://doi.org/\doi}{\doi}\ -\ }
+  \ifcsvstrcmp{\arxiv}{TBD}{}{arXiv:\href{https://arxiv.org/abs/\arxiv}{\arxiv}}
+  \\\\
+}
+}
+
+
+\end{document}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>https://www.markuspad.com/articles/index.html</loc>
+    <lastmod>2023-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.markuspad.com/index.html</loc>
+    <lastmod>2023-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.markuspad.com/articles/scale/index.html</loc>
+    <lastmod>2023-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.markuspad.com/publications/index.html</loc>
+    <lastmod>2022-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.markuspad.com/articles/shell/index.html</loc>
+    <lastmod>2023-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.markuspad.com/pluto_notebooks/shell/</loc>
+    <lastmod>2023-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+</urlset>

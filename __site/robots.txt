@@ -1,0 +1,4 @@
+Sitemap: https://www.markuspad.com/sitemap.xml
+
+User-agent: *
+Disallow:
