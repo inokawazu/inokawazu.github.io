@@ -1,2 +1,3 @@
-### [About Scales - *2023-05-03*](./scale)
-### [Do Shells have an Equation? - *2021-12-11*](./shell)
+["articles/scale.md", "articles/shell.md"]
+["./scale", "./shell"]
+UndefVarError: `dates` not defined
