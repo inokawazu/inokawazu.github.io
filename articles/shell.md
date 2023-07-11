@@ -3,4 +3,8 @@ title = "Do Shells have an Equation?"
 date = "2021-12-11"
 +++
 
-[Pluto Notebook](/pluto_notebooks/shell_notebook)
+[Pluto Notebook](/pluto_notebooks/shell)
+
+~~~
+<iframe src=/pluto_notebooks/shell width=1000 height=3000></iframe>
+~~~
