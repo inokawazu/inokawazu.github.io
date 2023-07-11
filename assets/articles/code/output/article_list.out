@@ -1,3 +1,2 @@
 ["articles/scale.md", "articles/shell.md"]
 ["./scale", "./shell"]
-UndefVarError: `dates` not defined
