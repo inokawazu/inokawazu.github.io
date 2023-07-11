@@ -1,2 +1,4 @@
-["articles/scale.md", "articles/shell.md"]
-["./scale", "./shell"]
+[Dates.Date("2023-05-03"), Dates.Date("2021-12-11")]
+
+["About Scales", "Do Shells have an Equation?"]
+
