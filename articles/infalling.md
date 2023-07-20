@@ -143,8 +143,10 @@ Outside observers would see rain freeze on the surface while Newton's dark star 
 To derive the energy, first we start with the Lagrangian for a free particle of mass $m$.
 
 $$
-L = -mc \sqrt{-\dot\gamma^2} \\~\\
-  = -mc \sqrt{c^2(1-r_s/r) - \dot r^2/(1-r_s/r)} \\~\\
+L = -mc \sqrt{-\dot\gamma^2} 
+$$
+$$
+  = -mc \sqrt{c^2(1-r_s/r) - \dot r^2/(1-r_s/r)}
 $$
 
 Finding the cannonical radial momentum we get
@@ -157,10 +159,18 @@ Changing to a hamiltonian mechanics, we get
 
 $$
 E = \dot r p_r - L \\~\\
-  = mc \frac {\dot r^2/(1-r_s/r)}{\sqrt{-\dot\gamma^2}} + mc \sqrt{-\dot\gamma^2} \\~\\
-  = mc \frac {\dot r^2/(1-r_s/r) -\dot\gamma^2}{\sqrt{-\dot\gamma^2}} \\~\\
-  = \frac {m c^3(1-r_s/r)}{\sqrt{-\dot\gamma^2}} \\~\\
-  = \frac {m c^3(1-r_s/r)}{\sqrt{c^2(1-r_s/r) - \dot r^2/(1-r_s/r)}} \\~\\
+  = mc \frac {\dot r^2/(1-r_s/r)}{\sqrt{-\dot\gamma^2}} + mc \sqrt{-\dot\gamma^2}
+$$
+$$
+  = mc \frac {\dot r^2/(1-r_s/r) -\dot\gamma^2}{\sqrt{-\dot\gamma^2}}
+$$
+$$
+  = \frac {m c^3(1-r_s/r)}{\sqrt{-\dot\gamma^2}}
+$$
+$$
+  = \frac {m c^3(1-r_s/r)}{\sqrt{c^2(1-r_s/r) - \dot r^2/(1-r_s/r)}}
+$$
+$$
   = \frac {m c^3\sqrt{ 1-r_s/r }}{\sqrt{c^2 - \dot r^2/(1-r_s/r)^2}}
 $$
 
