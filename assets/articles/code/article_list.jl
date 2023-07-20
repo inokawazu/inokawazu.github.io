@@ -8,6 +8,7 @@ article_suffixes = ["html", "md"]
 remove_suffix(x) = basename(reduce((path, suff) -> chopsuffix(path, "." * suff), article_suffixes, init = x))
 
 article_files = readdir("articles", join=true)
+
 article_paths = "./" .* remove_suffix.(article_files)
 
 dates = [Date(pagevar(file, "date", default="")) for file in article_files]
