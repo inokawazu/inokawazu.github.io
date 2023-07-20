@@ -158,7 +158,9 @@ $$
 Changing to a hamiltonian mechanics, we get
 
 $$
-E = \dot r p_r - L \\~\\
+E = \dot r p_r - L 
+$$
+$$
   = mc \frac {\dot r^2/(1-r_s/r)}{\sqrt{-\dot\gamma^2}} + mc \sqrt{-\dot\gamma^2}
 $$
 $$
