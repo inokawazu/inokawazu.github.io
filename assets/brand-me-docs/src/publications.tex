@@ -43,7 +43,7 @@
 % degree,specialization,gradyear,entryyear,school,country,city
 \csvreader[publications]{data/publications.csv}{}{
   \ifcsvstrcmp{\doi}{TBD}{}{
-  \textit{\year}\ -\ \textbf{\title}\\
+  \noindent\textit{\year}\ -\ \textbf{\title}\\
   \ifcsvstrcmp{\doi}{TBD}{}{\href{https://doi.org/\doi}{\doi}\ -\ }
   \ifcsvstrcmp{\arxiv}{TBD}{}{arXiv:\href{https://arxiv.org/abs/\arxiv}{\arxiv}}
   \\\\
