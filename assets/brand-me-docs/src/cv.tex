@@ -52,13 +52,13 @@
   \textit{\year}\ -\ \textbf{\title}\\
   \ifcsvstrcmp{\doi}{TBD}{}{\href{https://doi.org/\doi}{\doi}\ -\ }
   \ifcsvstrcmp{\arxiv}{TBD}{}{arXiv:\href{https://arxiv.org/abs/\arxiv}{\arxiv}}
-  \\\\
+  \\
 }
 
 \section*{Education}
 
 \csvreader[educations]{data/education.csv}{}{
-  \textbf{\degree\ in\ \specialization}\ \entryyear-\gradyear, \school\ -\ \country, \city\\\\
+  \textbf{\degree\ in\ \specialization}\ \entryyear-\gradyear, \school\ -\ \country, \city\\
 }
 
 \section*{Appointments/Employments}
@@ -66,7 +66,7 @@
 \csvreader[appointments]{data/appointments.csv}{}{
   \textbf{\position}\ \ \startyear\ -\ \endyear\\
   \institution
-  \\\\
+  \\
 }
 
 \section*{Miscellaneous}
