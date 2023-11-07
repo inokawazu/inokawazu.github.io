@@ -1,12 +1,8 @@
 +++
-date = "2023-05-03"
-title = "About Scales"
+title = 'About Scales'
+date = 2023-05-03T00:00:00+09:00
+draft = false
 +++
-
-# {{fill title}}
-{{fill author}}  
-
-{{fill date}}  
 
 I was watching a [Veritasium video](https://www.youtube.com/watch?v=bHIhgxav9LY). 
 It was about the misconception of energy flow in electricity.
