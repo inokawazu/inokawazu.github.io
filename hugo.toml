@@ -33,7 +33,7 @@ url = "/post"
 
 [[params.profileMode.buttons]]
 name = "CV"
-url = "brand-me-docs/build/cv.pdf"
+url = "cv.pdf"
 
 [[params.profileMode.buttons]]
 name = "iNSPIREHEP"
@@ -41,7 +41,7 @@ url = "https://inspirehep.net/authors/1778034?ui-citation-summary=true"
 
 [[params.profileMode.buttons]]
 name = "Publications"
-url = "brand-me-docs/build/publications.pdf"
+url = "publications.pdf"
 
 [[params.socialIcons]]
 name = "GitHub"
