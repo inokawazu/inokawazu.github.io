@@ -3,8 +3,20 @@ languageCode = 'en-us'
 title = 'Markus Pad'
 theme = 'PaperMod'
 
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
 [params]
 defaultTheme = "auto"
+ShowReadingTime = true
+ShowToc = true
+comments = true
+disqusShortname = "markus-pad"
+author = "Markus Amano"
+ShowShareButtons = true
+ShowBreadCrumbs = true
+ShowPostNavLinks = true
+ShowCodeCopyButtons = true
 
 [params.profileMode]
 enabled = true
@@ -20,5 +32,17 @@ name = "Blog"
 url = "/post"
 
 [[params.profileMode.buttons]]
+name = "CV"
+url = "brand-me-docs/build/cv.pdf"
+
+[[params.profileMode.buttons]]
+name = "iNSPIREHEP"
+url = "https://inspirehep.net/authors/1778034?ui-citation-summary=true"
+
+[[params.profileMode.buttons]]
+name = "Publications"
+url = "brand-me-docs/build/publications.pdf"
+
+[[params.socialIcons]]
 name = "GitHub"
 url = "https://github.com/inokawazu"
