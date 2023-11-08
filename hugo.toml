@@ -46,3 +46,7 @@ url = "publications.pdf"
 [[params.socialIcons]]
 name = "GitHub"
 url = "https://github.com/inokawazu"
+
+[[params.socialIcons]]
+name = "Linkedin"
+url = "https://www.linkedin.com/in/markus-amano/"
