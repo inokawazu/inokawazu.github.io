@@ -6,4 +6,4 @@
 	url = https://github.com/adityatelange/hugo-PaperMod.git
 [submodule "static/brand-me-docs"]
 	path = static/brand-me-docs
-	url = git@github.com:inokawazu/brand-me-docs.git
+	url = https://github.com/inokawazu/brand-me-docs.git
