@@ -18,8 +18,8 @@ ShowCodeCopyButtons = true
 
 [params.profileMode]
 enabled = true
-title = "<Title>"
-subtitle = "A blog for Markus A.G.A."
+title = "Markus Pad"
+subtitle = "Welcome to my pad. I'm your host, Markus Amano, and I so glad you came. Please check out my humble blog. CV and professional stuff is below and to the side. I am a postodoctoral fellow here at Henan University. My currently research topic is modeling hadron physics with the holographic principles, derived from string theory. I enjoy interesting mathematical puzzles and games."
 imageUrl = "img/me.jpg"
 imageTitle = "A sketch of Markus Amano."
 imageWidth = 330 # 615 # 1430 # 2860
