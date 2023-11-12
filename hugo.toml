@@ -6,6 +6,9 @@ theme = 'PaperMod'
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
 
+[taxonomies]
+tag = 'tags'
+
 [params]
 defaultTheme = "auto"
 ShowReadingTime = true
