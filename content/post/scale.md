@@ -1,7 +1,7 @@
 +++
 title = 'About Scales'
 date = 2023-05-03T00:00:00+09:00
-draft = false
+slug = "about scales"
 +++
 
 I was watching a [Veritasium video](https://www.youtube.com/watch?v=bHIhgxav9LY). 

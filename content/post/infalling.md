@@ -1,6 +1,7 @@
 +++
 title = 'How does it rain on black holes?'
 date = 2023-07-19T00:00:00+09:00
+slug = "infalling-rain"
 math = true
 +++
 
