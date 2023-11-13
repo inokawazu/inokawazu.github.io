@@ -1,5 +1,5 @@
 +++
-title = 'Qunatum Shoots and Ladders'
+title = 'Quantum Shoots and Ladders'
 date = 2023-11-12T18:07:36+09:00
 draft = true
 slug = 'quantum-shoots-and-ladders'
