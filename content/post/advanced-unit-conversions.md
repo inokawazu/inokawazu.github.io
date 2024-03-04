@@ -8,20 +8,20 @@ math = true
 
 # Unit Conversions
 
-1 meter = 100 millimeters = 3.281 feet = 39.37 in.
-This is a unit conversion.
-Sometimes, a unit conversion is used to convert quatites from an unfamiliar unit to a familiar on.
-At the moment, 1 US Dollar is 151 Japanese Yen[^weakyen] [^ratecite].
-Sometimes, the change of unit is for clarity, to express quatites of large or small amounts into comprehendible numbers.
-Like instead of several thousands of steps, I find in the unit of several miles[^us] to be graspable.
+1 meter = 100 millimeters = 3.281 feet = 39.37 inches.
+This is an example of unit conversion.
+Sometimes, unit conversion is used to convert quantities from an unfamiliar unit to a familiar one.
+Currently, 1 US Dollar is equivalent to 151 Japanese Yen[^weakyen] [^ratecite].
+At times, the change of unit is for clarity, to express quantities of large or small amounts into comprehensible numbers.
+For instance, instead of several thousand steps, I find the unit of several miles[^us] more graspable.
 
-While I taught as a graduate teaching assistant or during college tutoring, I found that units tended to be an after thought in answering science (and sometimes math).
-For the poor students that I had the plesure of grading, sometimes got a lower letter grade because of missing units.
-I also made this same mistake in my college years as well.
-Maybe the thinking goes "The units are obvious. Why do I need to care about such tedious things?".
-At least I thought this on a few occasions[^unitmiss].
-I have two objectives in this article: convince the reader that units are important and expand on the notion of units and the power they have.
-If you are already convinced that units are important, just skip to the [later section]({{< relref "#advanced" >}}).
+While teaching as a graduate teaching assistant or during college tutoring, I observed that units tended to be an afterthought when answering science (and sometimes math) questions.
+Unfortunately, the students I had the pleasure of grading sometimes received a lower letter grade because of missing units.
+I also made this same mistake during my college years.
+Perhaps the thinking is, "The units are obvious. Why should I bother with such tedious details?"
+I remember thinking this on a few occasions[^unitmiss].
+I have two objectives in this article: to convince the reader that units are important, and to expand on the concept of units and the power they hold.
+If you are already convinced of the importance of units, feel free to skip to the [later section]({{< relref "#advanced" >}}).
 
 # Why Units
 
