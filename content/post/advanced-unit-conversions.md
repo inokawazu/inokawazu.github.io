@@ -1,7 +1,6 @@
 +++
 title = 'Advanced Unit Conversions'
-date = 2024-03-03T14:33:59+09:00
-draft = true
+date = 2024-03-04
 tags = ["math", "physics"]
 math = true
 +++
