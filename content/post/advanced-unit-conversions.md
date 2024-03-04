@@ -26,144 +26,138 @@ If you are already convinced of the importance of units, feel free to skip to th
 # Why Units
 
 Units are important.
-If not for the pure usefulness,  the clarity of communication about observations and measurements of the nature world is critical in today's world of high precision.
-Fundamentally, units act as a medium to relate quatities of a same value.
-This is can readily be seen by a few examples.
-Length, where to have the *same value*, two quantities must measure the same distance.
-Time, where to have the *same value*, two quantities must measure the same duration.
-Value, where to have the *same value*[^valuetwo], two quantities must be appraised to the same degree.
+Beyond their sheer usefulness, the clarity of communication about observations and measurements of the natural world is critical in today's era of high precision.
+Fundamentally, units act as a medium to relate quantities of the same value.
+This can readily be seen through a few examples:
+- **Length**: For two quantities to have the *same value*, they must measure the same distance.
+- **Time**: For two quantities to have the *same value*, they must measure the same duration.
+- **Value**: For two quantities to have the *same value*[^valuetwo], they must be appraised to the same degree.
 
 ## They are Needed
 
-For units like length and time, the use of units allows for math to be useful, instead of being locked away in some Platonic ideal.
-For we let's take a length measurement of 6.18 meters = 6.18m.
-We can decompose this measurement into two parts.
-The numerical amount, 6.18.
-The unit part, "meter".
-When we make simulations, the numerical amount is what the computer understands.
-But without the the unit part, we could be talking about radically different length scales, like megaparsecs[^extreme] instead of meters; this would definitely change our interpretation of the result.
-For the sake of doing calculations as well, it's usually required of us to forego units do our calculators can handle the calculations.
-But, I would also recommend that one reunites these parts as soon as one can, lest there be a regretable engineering disaster.
+For units like length and time, the use of units allows mathematics to be practical, rather than being locked away in some Platonic ideal.
+Let's take a length measurement of 6.18 meters, or 6.18m.
+We can decompose this measurement into two parts:
+- The numerical amount, 6.18.
+- The unit part, "meter".
+
+In simulations, the numerical amount is what the computer understands.
+But without the unit part, we could be discussing radically different length scales, such as megaparsecs[^extreme] instead of meters, which would definitely change our interpretation of the results.
+For the sake of calculations, it's usually required of us to temporarily forego units so our calculators can handle the computations.
+However, I would recommend that one reunites these parts as soon as possible, lest there be a regrettable engineering disaster.
 
 ## They are Useful
 
 Regardless of the importance of units, they are useful in conjunction with unit conversions.
-Understanding units can help on understand unitful things more fundamentally.
-Let's take for the example of cooking.
-More likely than not, a particular recipe makes too much or too little.
-With unit conversions we can understand how to adjust ingredients to an arbitrary number of portions. 
+Understanding units can help one understand unitful concepts more fundamentally.
+Consider cooking as an example.
+More often than not, a particular recipe makes too much or too little.
+With unit conversions, we can adjust ingredients to an arbitrary number of portions.
 
-### Cooking Example 
+### Cooking Example
 
-Let's say that one recipe needs several ingredients of varying quantities of volume or mass.
-Let's label the ingredients with numbers $1,2,3,4,\ldots$. 
-Let's label the amount needed for the $i^{ th }$ ingredient as $x_i$.
-So per 1 recipe we $x_i$ of each ingredient to make some $p$, proportions.
-If we want for example, $w$, proportions, we can multiply each mentioned quantity by $w/p$.
-So our proportions becomes $w$ where ${ p\rightarrow (w/p) p }$.
-Likewise for our ingredient amounts become $(w/p) x_i$.
-The important quatities here is $w/p$.
-This quantity is unitless.
-It represents the proportional increase or decrease in the amount of proportions.
+Suppose a recipe requires several ingredients in varying quantities of volume or mass.
+We'll label the ingredients with numbers $1, 2, 3, 4, \ldots$.
+The amount needed for the $i^{th}$ ingredient is $x_i$.
+For one recipe, we need $x_i$ of each ingredient to make some $p$ portions.
+If we want, for example, $w$ portions, we can multiply each mentioned quantity by $w/p$.
+Our portions become $w$, where ${ p\rightarrow (w/p) p }$.
+Likewise, our ingredient amounts become $(w/p) x_i$.
+The important quantity here is $w/p$.
+This ratio is unitless and represents the proportional increase or decrease in the number of portions.
 
-Imagine you have a recipe that serves 4 people, but you need to adjust it to serve 6. This is where unit conversions come into play. 
-By understanding the relationship between the units, you can scale the ingredients up or down to achieve the desired quantity. 
+Imagine you have a recipe that serves 4 people, but you need to adjust it to serve 6. This is where unit conversions come into play.
+By understanding the relationship between the units, you can scale the ingredients up or down to achieve the desired quantity.
 Here's how you can do it:
 
 1. Identify the original number of servings ($p$), which in this case is 4.
-1. Determine the desired number of servings ($w$), which is 6.
-1. Calculate the conversion factor by dividing the desired servings by the original servings: $ w/p = 6/4 = 1.5 $.
-1. Multiply each ingredient amount ($x_i$) by the conversion factor to get the new required amount for the adjusted recipe.
+2. Determine the desired number of servings ($w$), which is 6.
+3. Calculate the conversion factor by dividing the desired servings by the original servings: $ w/p = 6/4 = 1.5 $.
+4. Multiply each ingredient amount ($x_i$) by the conversion factor to get the new required amount for the adjusted recipe.
 
 For example, if the original recipe calls for 2 cups of sugar for 4 servings, you would need $1.5 \times 2$ cups of sugar to make 6 servings, which equals 3 cups of sugar.
 
 # Advanced Unit Conversions {#advanced}
 
-For review, let's rememeber the rules of units.
-And for simplicity, let's have a set of units that are just a single letter, like $a$.
+For review, let's remember the rules of units.
+For simplicity, let's consider a set of units that are represented by a single letter, like $a$.
 These units are incommensurable.
-You can always multiply two units units and divide them to get a new unit.
-$ab$ and $a/b$ would be new units.
-You can only add commensurable.
-One might wonder why restrict to having one commensurable unit (one per letter)?
-We could have included more commensurable units for say unit $a$.
-For example, $a'$, but there is always a unitless number such that $x = a'/a$.
-So in principle[^notpractical], we can express all sets of commensurable units with just one unit.
+You can always multiply or divide two units to get a new unit, such as $ab$ or $a/b$.
+You can only add or subtract commensurable units.
+One might wonder why we restrict ourselves to one commensurable unit per letter.
+We could have included more commensurable units for, say, unit $a$, like $a'$, but there is always a unitless number such that $x = a'/a$.
+So, in principle[^notpractical], we can express all sets of commensurable units with just one unit.
 
-In short, for a set of incommensurable units $\\\{a,b,\ldots\\\}$ and numbers $s$ and $m$.
+In short, for a set of incommensurable units $\{a, b, \ldots\}$ and numbers $s$ and $m$:
 
-1. A real number, $s$, and unit, $a$, make a quantity, $sa$.
-2. Any two quatities ($s a$ and $m b$) can be multiplied ($(sm) (ab)$) or divided ($(s/m) (a/b)$).
+1. A real number, $s$, combined with a unit, $a$, makes a quantity, $sa$.
+2. Any two quantities ($s a$ and $m b$) can be multiplied ($(sm) (ab)$) or divided ($(s/m) (a/b)$).
 3. Two quantities are commensurable ($a$, $a'$) if their ratio is a unitless number.
 4. Only commensurable quantities can be added (or subtracted).
 
-Unit conversion is simply a definition of a new unit.
+Unit conversion is simply the definition of a new unit.
 Let's say we have a new unit $a'$ commensurable with $a$.
-We define it as $a'x/a = 1$ where $x$ is some arbitrary number.
+We define it as $a'x/a = 1$, where $x$ is some arbitrary number.
 
 ## Unit Conversions as Transformations
 
-We can solve for the aforementioned $a$ here such that we have $a = a' x$.
-We can then express $a$ as a function of $a'$, $f(a') = a' x$.
-This $f$ encodes the unit conversion.
-Usually this $f$ has as an "inverse transformation", $f^{-1}$.
-So $(f^{-1}\circ f)(a') = f^{-1}(f(a')) = a'$.
+We can solve for $a$ such that we have $a = a'x$.
+We can then express $a$ as a function of $a'$, $f(a') = a'x$.
+This function $f$ encodes the unit conversion.
+Usually, this function $f$ has an "inverse transformation," $f^{-1}$.
+So, $(f^{-1}\circ f)(a') = f^{-1}(f(a')) = a'$.
 This inverse transformation does not necessarily have to be a mathematical inverse.
-
-<!-- We would like this rule for transformations. -->
-<!-- It's possible to have such transformations such that the resulting -->
 
 ### Money to the Future and Back
 
-Let's take the example of investing money.
-Let's say we have $f$ as the transformation that means the value of some principle after 30 years in todays money.
+Consider the example of investing money.
+Let $f$ be the transformation that represents the value of some principal after 30 years in today's money.
 
 $$f(x) := x$$
 
-This $f$ takes today money and converts it to future money, $f$ is trivial because money that moves into the future keeps its face value.
-Now assuming an inflation rate of $i$, we have the inverse transformation $f^{-1}$.
+This function $f$ takes today's money and converts it to future money. $f$ is trivial because money that moves into the future retains its face value.
+Now, assuming an inflation rate of $i$, we have the inverse transformation $f^{-1}$.
 
 $$f^{-1}(y) := y / (1+i)^{30}$$
 
-Composing these transformations we have the amount the amount of money in todays cash if left for 30 years.
+Composing these transformations, we have the amount of money in today's cash if left for 30 years.
 
 $$f^{-1}(f(x)) := x / (1+i)^{30} = x (1+i)^{-30}$$
 
-I would argue that $f$ and $f^{-1}$ are unit conversions because they both are invertible functions.
-We can express each transformations also as a definition of a new unit.
-But, in the context of investing we naturally can transform money to the future dollars or from the furture dollars to present dollars with the transformations $f$ and $f^{-1}$ respectively.
+I would argue that $f$ and $f^{-1}$ are unit conversions because they are both invertible functions.
+We can express each transformation also as the definition of a new unit.
+But, in the context of investing, we naturally transform money to future dollars or from future dollars to present dollars with the transformations $f$ and $f^{-1}$, respectively.
 
-We can see that the unit conversions can correspond to transformations.
-This is more general to traditional unit conversions because sometimes the mathematical invere of the transformation is not available maybe due to the particular model's constraints.
-In this case of money, money natural just sits around naturally while when looking in retrospect can be done by using historical interest rates.
+We can see that unit conversions can correspond to transformations.
+This is more general than traditional unit conversions because sometimes the mathematical inverse of the transformation is not available, perhaps due to the particular model's constraints.
+In the case of money, money naturally just sits around, while looking in retrospect can be done by using historical interest rates.
 
 ## Generalizing Units (Addition/Subtraction)
 
-Units can be multiplied and divided and add/subtract if commensurable.
-Nevertheless, we can relax the 3rd condition.
-I could have a quantity that takes the form like $1 m + 1 s$; this is read as 1 meter and 1 second.
-If we limit the number of base commensurable units we could have a now algebra of units.
-The elements of this algebra is countably inifinite[^guess] where it's elements take the form of linear sum of quantities of incommensurable units.
-All of the unit incommensurable units would take the form of 
+Units can be multiplied, divided, and added or subtracted if they are commensurable.
+However, we can relax the third condition.
+Imagine a quantity that takes the form of $1 m + 1 s$; this is read as 1 meter plus 1 second.
+If we limit the number of base commensurable units, we could create a new algebra of units.
+The elements of this algebra are countably infinite[^guess], where its elements take the form of a linear sum of quantities of incommensurable units.
+All of the incommensurable units would take the form of 
 $$ \prod_i^N x_i^{ n_i }\\,.$$
-$N$ is the number of base units.
-$n_i$ is the power raised for the ith based unit, which could be any integer.
-An interesting thing about such units is that we can not label each unit by a Nth order Cartesian product of integers!
-So the space of incommensurable units is $\otimes^N \mathbb Z$.
-Within this space it is acutally possible to do unit transformations as well.
-A generalization of the scaling by number here would be to use a general linear transformation.
-Let's say we have some scheme to represent quantities as a vector where the ith slot is mapped to mean the amount of the ith units.
-For the quantity 0, this vector would be an infinitely long zero vector.
-Let's call this quantity v.
-Taking a linear transformation A, we can find the quantity expressed in new units as Av.
-In a sense, the usual unit transformation is in this same class of linear transformations, but the main difference is that commensurable units are never mix.
-So, A would be diagonal[^guess].
-For example we could have $1 m + 2 s \equiv \langle 1, 2 \rangle = v$
-We could have a unit transformation of 
-$$A = \begin{bmatrix} 1 m/m & 1m/s \\\\ 0 & 1s/s \\ \end{bmatrix}$$.
-The new quatity, in the new units would be $Av = 3 m + 2 s$.
-The downside of these generalized units is that every vector is mappable to any other vector so all units essentially the same.
-I could see this generalization being useful if there are retrictions on which transformations are allowed, so there are multiple disjoint sets of incommensurable units.
+Here, $N$ is the number of base units, and $n_i$ is the power raised for the $i^{th}$ base unit, which could be any integer.
+An interesting aspect of such units is that we can label each unit by an $N^{th}$ order Cartesian product of integers!
+So, the space of incommensurable units is $\otimes^N \mathbb{Z}$.
+Within this space, it is actually possible to perform unit transformations as well.
+A generalization of scaling by a number here would be to use a general linear transformation.
+Suppose we have some scheme to represent quantities as a vector, where the $i^{th}$ slot corresponds to the amount of the $i^{th}$ unit.
+For the quantity zero, this vector would be an infinitely long zero vector.
+Let's call this quantity $v$.
+Taking a linear transformation $A$, we can find the quantity expressed in new units as $Av$.
+In a sense, the usual unit transformation is in this same class of linear transformations, but the main difference is that commensurable units are never mixed.
+Thus, $A$ would be diagonal[^guess].
+For example, we could have $1 m + 2 s \equiv \langle 1, 2 \rangle = v$.
+A unit transformation could be represented as 
+$$A = \begin{bmatrix} 1 m/m & 1 m/s \\\\ 0 & 1 s/s \end{bmatrix}$$.
+The new quantity, in the new units, would be $Av = 3 m + 2 s$.
+The downside of these generalized units is that every vector is mappable to any other vector, so all units are essentially the same.
+This generalization could be useful if there are restrictions on which transformations are allowed, resulting in multiple disjoint sets of incommensurable units.
 
 [^weakyen]: The Yen is weak compared to the dollar at the moment.
 [^ratecite]: https://www.exchange-rates.org/ja/exchange-rate-history/usd-jpy-2024
