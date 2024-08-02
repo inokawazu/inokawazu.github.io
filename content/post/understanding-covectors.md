@@ -1,7 +1,7 @@
 +++
 title = 'Understanding Covectors'
-date = 2024-07-18T08:57:02+09:00
-draft = true
+date = 2024-08-02
+draft = false
 math = true
 tags = ["physics", "math"]
 +++
