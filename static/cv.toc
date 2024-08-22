@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Background}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Education}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Appointments/Employments}{1}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Research}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Publications (Including Preprints)}{1}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Given Talks}{2}{subsubsection.2.1.1}%
+\contentsline {section}{\numberline {3}Teaching Experience}{2}{section.3}%
+\contentsline {section}{\numberline {4}Recognition and Honors}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Awards}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Memberships}{3}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Miscellaneous}{3}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Skills}{3}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Detailed Experiences}{4}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}References}{4}{subsection.5.3}%
