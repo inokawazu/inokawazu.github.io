@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'Markus Pad'
 theme = 'PaperMod'
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
 
