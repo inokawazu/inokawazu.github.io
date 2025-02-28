@@ -131,7 +131,7 @@ The mass matrix $M$ has some interesting properties.
 It's inverse is simple.
 
 \begin{equation}
-M_{ij}^{-1} = -\frac{\delta_{i+1, j}}{m_j}\delta_{i, i+1} - \frac{\delta_{i, j+1}}{m_j} + \delta_{ij} \left(\frac{ 1 }{m_{i}} + \frac{ (1-\delta_{i1}) }{m_{i-1}}\right)
+M_{ij}^{-1} = -\frac{\delta_{i+1, j}}{m_i} - \frac{\delta_{i, j+1}}{m_j} + \delta_{ij} \left(\frac{ 1 }{m_{i}} + \frac{ (1-\delta_{i1}) }{m_{i-1}}\right)
 \end{equation}
 
 For example for $N=4$ we have
