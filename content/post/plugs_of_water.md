@@ -80,9 +80,9 @@ KE_i = \frac 12 m_i \left( \frac{dx_i}{dt} \right)^2 \equiv \frac 12 m_i \dot x_
 Putting this all together we can write down the Lagrangian.
 
 \begin{equation}
-L = \sum_{i}^{N-1}\left( \frac 12 m_i \dot x_i^2 - m_i g x_i \right)
+L = \sum_{i=1}^{N}\left( \frac 12 m_i \dot x_i^2 - m_i g x_i \right)
 -F x_1
--\sum_{i}^{N-1}\frac{q}{\gamma - 1} \frac{1}{(x_{i+1} - x_i - \ell_{i})^{ \gamma - 1 }}
+-\sum_{i=1}^{N-1}\frac{q}{\gamma - 1} \frac{1}{(x_{i+1} - x_i - \ell_{i})^{ \gamma - 1 }}
 \end{equation}
 
 Let's do one more thing before I end this article.
@@ -100,9 +100,9 @@ Like $x\to x l$ and $t \to t \sqrt{l/g}$.
 So our Lagrangian becomes
 
 \begin{equation}
-L = \sum_{i}^{N-1}\left( \frac 12 m_i \dot x_i^2 - m_i x_i \right)
--F x_1
--\sum_{i}^{N-1}\frac{q}{\gamma - 1} \frac{1}{(x_{i+1} - x_i - \ell_{i})^{ \gamma - 1 }}
+L = \sum_{i=1}^{N}\left( \frac 12 m_i \dot x_i^2 - m_i x_i \right)
++F x_1
+-\sum_{i=1}^{N-1}\frac{q}{\gamma - 1} \frac{1}{(x_{i+1} - x_i - \ell_{i})^{ \gamma - 1 }}
 \end{equation}
 
-In the [next article](/content/post/plugs_of_water_2) I will try to look at some more in-depth properties of this Lagrangian.
+In the [next article](../plugs_of_water_2) I will try to look at some more in-depth properties of this Lagrangian.
