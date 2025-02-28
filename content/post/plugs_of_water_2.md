@@ -1,7 +1,6 @@
 +++
 title = 'Plugs of Water 2'
 date = 2025-02-23T12:24:28+09:00
-draft = true
 tags = ["physics"]
 math = true
 +++
