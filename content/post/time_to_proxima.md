@@ -2,7 +2,6 @@
 title = 'Time to Proxima'
 date = 2025-07-13T18:40:50+09:00
 math = true
-draft = true
 +++
 
 # Traveling the Stars
