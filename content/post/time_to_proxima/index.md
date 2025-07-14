@@ -138,7 +138,7 @@ For large $\alpha$, $s_{total}\sim0$.
 That being said, for our case $\alpha \approx 3$.
 If we plug in our parameters we get $s_{total} \approx 1.59 \, yr$.
 So compared with, there is a significant difference between the times.
-People on Earth record about double (2.12) the duration.
+People on Earth record about double ($\sim 2.12$) the duration.
 
 Notice that if we took the non-relativistic limit of $c \to \infty$:
 
@@ -147,12 +147,37 @@ $$s_{total} =  \sqrt{\frac{2ML}{F}}$$
 Where this time does not depend on the thrust.
 This would also coincide with the Earth time too.
 
-
 [^unitlessallow]: Where I have defined and used some unitless quantities.
+
+# Using a Computer (of course)
+
+Doing the full numerical calculation ([Pluto notebook here](/notebooks/time_to_proxima.jl)), 
+I make some plots of the both $t$, Earth time, and $s$k spaceship time, to reach Proxima Centauri.
+
+![A graph showing Earth times and spaceship times to Proxima Centauri.](figure1.png)
+
+One can see in the graph that the Earth time never becomes shorter than the time it would take light to reach Proxima according to Earth observers.
+Nevertheless, on the ship the time it takes can actually become less that the time it would take light to reach Proxima.
+Of course we have to be carefule about this because these two times are being compared wit two different reference frames.
+
+![A graph showing Earth times and spaceship times to Proxima Centauri but with larger alpha.](figure2.png)
+
+Here is another graph showing the same but for larger $\alpha$.
+
+How about our previous approximation?
+How good was it, one might ask.
+
+With $\alpha=3.0$ then $t \approx 1.6$ and $\sigma \approx 1.1$.
+This clock time on Earth is not double the shiptime persay, but is ~~pretty~~ kinda close ($\sim 1.38$)[^notreally].
+
+[^notreally]: Not really...
 
 # Further Reading
 
 - [Proxima Centauri](https://en.wikipedia.org/wiki/Proxima_Centauri)
+- [Notebook for the getting the pretty Graphs](/notebooks/time_to_proxima.jl)
+- [Time Dilation](https://en.wikipedia.org/wiki/Time_dilation)
+- [Mr. Topmkins](http://boomeria.org/physicslectures/secondsemester/relativity/tompkins.html)
 
 # Appendix
 
