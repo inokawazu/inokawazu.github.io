@@ -71,10 +71,10 @@ fig2 = let amax = 20, alphas = range(0.1, amax, step = 0.01)
 end
 
 # ╔═╡ a510e2b0-aa42-49e3-9b58-cde02be87880
-begin
-	save("../../content/post/time_to_proxima/figure1.png", fig1) 
-	save("../../content/post/time_to_proxima/figure2.png", fig2) 
-end
+# begin
+# 	save("../../content/post/time_to_proxima/figure1.png", fig1) 
+# 	save("../../content/post/time_to_proxima/figure2.png", fig2) 
+# end
 
 # ╔═╡ 3e8cd177-3e6e-47a4-ba0b-75b62155f413
 three_times = 2 * getdest(3.0)
