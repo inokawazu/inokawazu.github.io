@@ -24,7 +24,7 @@ Now let's look at how the ship moves.
 According to Einstein, particles under a constant force will travel as
 
 $$
-\frac{dp}{ds} = F \tag{Second Law}
+\frac{dp}{ds} = F \tag{2nd}
 $$
 
 $p$ is the relativistic momentum and $s$ is the time as recorded by the spaceship.
@@ -34,21 +34,21 @@ A small elapsed span of Earth time is $dt$.
 Relating it to $ds$, we have $ds = dt \sqrt{1 - \vec v^2/c^2}$.
 So the second law becomes
 $$
-\gamma\frac{dp}{dt} = F \tag{Second Law}
+\gamma\frac{dp}{dt} = F \tag{2nd}
 $$
 where $\gamma := 1/\sqrt{1 - v^2/c^2}$.
 
 Taking our ship to travel along one direction [calculations here](#rate-momentum-change-calculations) we find the second law can be written as
 
 $$
-\frac{M a}{(1 - v^2/c^2 )^2} = F \tag{Second Law}
+\frac{M a}{(1 - v^2/c^2 )^2} = F \tag{2nd}
 $$
 
 where $a$ is the acceleration.
 At this point, we can introduce some units.
 
 $$
-\frac{Ma}{(1 - v^2/c^2 )^2} = F \tag{Second Law}
+\frac{Ma}{(1 - v^2/c^2 )^2} = F \tag{2nd}
 $$
 
 $q = L x$ and $v = c \beta$ where $q$ and $\beta$ are unitless.
