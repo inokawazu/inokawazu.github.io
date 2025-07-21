@@ -11,39 +11,39 @@ tags = ["physics"]
 
 Traveling throughout the Milky Way Galaxy, one can assume a [flat universe](https://en.wikipedia.org/wiki/Minkowski_space).
 So we can assume only special relativity to calculate interstellar travel times for all observers [^observers].
-This time I want to expand our interstellar travel calculation to the universe scale.
-On the universal scale, the universe is not flat however, but is expanding.
-We can approximate this expanding universe as a so called [de Sitter](https://en.wikipedia.org/wiki/De_Sitter_space) (dS) spacetime.
-Our question is "How long would it take for a spaceship (with constant thrust) to travel to say a nearby Galaxy?".
+This time I want to expand our interstellar travel calculation to the universal scale.
+On the universal scale, the universe is not flat, however, but is expanding.
+We can approximate this expanding universe as a so-called [flat Friedmann–Lemaître–Robertson–Walker spacetime](https://en.wikipedia.org/wiki/Friedmann%E2%80%93Lema%C3%AEtre%E2%80%93Robertson%E2%80%93Walker_metric).
+Our question is: "How long would it take for a spaceship (with constant thrust) to travel to, say, a nearby galaxy?"
 
 [^observers]: At least for two observers -- Earth and the spaceship.
 
 # Setting up the Calculation
 
-Since our destination and starting point (Earth) are naturally being pull apart by the spacetime, we need to keep track of their positions.
-Of course we have to solve for the trajectory of spaceship too.
-Once we have the solutions we can calculate the elapsed time on the ship.
+Since our destination and starting point (Earth) are naturally being pulled apart by spacetime, we need to keep track of their positions.
+Of course, we have to solve for the trajectory of the spaceship too.
+Once we have the solutions, we can calculate the elapsed time on the ship.
 
 Due to the complexity of including an expanding spacetime, I suspect only numerical solutions will be possible here.
 Nevertheless, I can promise some pretty graphs.
-Less start wit the action for a massive particle.
+Let's start with the action for a massive particle.
 
 $$
 S = -mc \int dt \sqrt{-\dot x \cdot \dot x}
 $$
 
-where we are taking the derivative wrt $t$ the time parameter of an observer on
+where we are taking the derivative with respect to $t$, the time parameter of an observer on
 Earth located at $x_i=0$. Static observers in this frame of reference can be
 written without any spatial velocity. So we can position the destination at
-some coordinate distance along an arbitrary axis, say the  $x$ axis. The dot
+some coordinate distance along an arbitrary axis, say the $x$ axis. The dot
 product is done with the metric.
 
 $$
 -c^2 ds^2 = -c^2 dt^2 + a^2(t) (dx_1^2 + dx_2^2 + dx_3^2)
 $$
 
-This metric homogeneous and isotropic.
-Ie, there is no special point in the universe.
+This metric is homogeneous and isotropic.
+I.e., there is no special point in the universe.
 The unitless $a$ scale factor captures the expansion of the universe.
 Using only 1D of spatial direction, we can write the action as 
 
@@ -51,12 +51,12 @@ $$
 S = -mcL \int d\tau \sqrt{1-a(t)^2 \dot x^2}
 $$
 
-where we introduced some new unitless varaibles.
-$x_1 = L x$ and $v = c \beta$ where $q$ and $\beta$ are unitless.
+where we introduced some new unitless variables.
+$x_1 = L x$ and $v = c \beta$ where $x$ and $\beta$ are unitless.
 The unitless time is expressed as $t = L/c \tau$ with unitless $\tau$.
 $L$ is the spatial coordinate distance to our destination.
 
-Where we set constant appropriately.
+Here, we set constants appropriately.
 The variation with respect to $x$ gives us
 
 $$
@@ -67,19 +67,19 @@ $$
 We added the unitless force $\alpha$ which is constant in the rest frame.
 
 Let's put some numbers to our problem!
-The nearest galaxy is Andromeda at around $L = 2.50 Mly$ [^Mly].
-I know that Andromeda is actually coming towards us, but for sake of this article let's just turn off the attractive force between our two galaxies 😜.
-$a$ is related to the Hubble Constant, $H$, as $da/dt/a = H = 0.07/Gyr = 1.75 \times 10^{-4} c/L$.
-On this scale, $H$ is small
-For Centaurus N -- the furthest nearby galaxy -- $L = 12.3 Mly$, we have $H = 8.616 \times 10^{-4} c/L$.
+The nearest galaxy is Andromeda at around $L = 2.50$ Mly [^Mly].
+I know that Andromeda is actually coming towards us, but for the sake of this article let's just turn off the attractive force between our two galaxies 😜.
+$a$ is related to the Hubble Constant, $H$, as $da/dt/a = H = 0.07/\text{Gyr} = 1.75 \times 10^{-4} c/L$.
+On this scale, $H$ is small.
+For Centaurus N -- the furthest nearby galaxy -- $L = 12.3$ Mly, we have $H = 8.616 \times 10^{-4} c/L$.
 This is still small.
 Nevertheless, the dimensionless force, $\alpha$, will be huge on account of the large distance in $L$.
 $\alpha \approx 2.58 \times 10^6$ for Andromeda, and 
 $\alpha \approx 1.27 \times 10^7$ for Centaurus N.
 
-In our equation of motion of the ship, a large $\alpha$ would quick accelerte the ship to approximately the speed of light in "no time".
-So, the nice thing is that for cosmological scales, we can approx our ship as moving at light speed.
-If we did not have any acceleration, we on the other hand treat our spaceship as meaning motionless with respect to the comoving coordinate system.
+In our equation of motion for the ship, a large $\alpha$ would quickly accelerate the ship to approximately the speed of light in "no time."
+So, the nice thing is that for cosmological scales, we can approximate our ship as moving at light speed.
+If we did not have any acceleration, we would, on the other hand, treat our spaceship as remaining motionless with respect to the comoving coordinate system.
 
 [^Mly]: Mly is Mega lightyear.
 
@@ -132,11 +132,11 @@ Solve[%, x'[t]]//FullSimplify
 
 # Lightspeed Away!
 
-Calculating time to with lightspeed particles is quite easy.
-Using the metric we can directly calcuate the equation of motion.
+Calculating time with lightspeed particles is quite easy.
+Using the metric, we can directly calculate the equation of motion.
 
 $$
--1 + a^2(\tau) \dot x^2 = 0 \implies = \dot x = 1/a(\tau)
+-1 + a^2(\tau) \dot x^2 = 0 \implies \dot x = 1/a(\tau)
 $$
 
 We can integrate this equation to get the coordinate distance.
@@ -157,35 +157,35 @@ This implies that
 
 $$\Delta\tau = \frac{e^h-1}{h}$$
 
-Putting back the units we have
+Putting back the units, we have
 
 $$\Delta t = \frac{e^{HL/c}-1}{H}$$
 
-Taking our universe to be a pure de Sitter space, $a = \exp(t H) \equiv \exp(\tau h)$
-Taking same integrals we have
+Taking our universe to be a pure de Sitter space, $a = \exp(t H) \equiv \exp(\tau h)$,
+taking the same integrals, we have
 
 $$\Delta t = \frac{1}{H} \log \left(\frac{c}{c-LH}\right)$$
 
-The first $a$ is a good approximation for our universe at the moment and into the future for sometime.
+The first $a$ is a good approximation for our universe at the moment and into the future for some time.
 The second is more accurate for the long run.
-An interesting thing to notice is that for a large enough $L$ the time taken goes to infinity.
-This is the cosmological horizon, $r_h = c/H \approx 14 Gly$.
+An interesting thing to notice is that for a large enough $L$, the time taken goes to infinity.
+This is the cosmological horizon, $r_h = c/H \approx 14$ Gly.
 This is a pretty large distance.
-This length is known as the [ Hubble length ](https://en.wikipedia.org/wiki/Hubble's_law#Hubble_length).
+This length is known as the [Hubble length](https://en.wikipedia.org/wiki/Hubble's_law#Hubble_length).
 
-Taking the second $a$, let's calcuate the time to Andromeda.
+Taking the second $a$, let's calculate the time to Andromeda.
 
 $$
-\Delta t = (Gyr/0.07) \log \left(\frac{1}{1- (2.50 Myr) * (0.07/Gyr)}\right) \approx 0.52 Gyr
+\Delta t = (\text{Gyr}/0.07) \log \left(\frac{1}{1- (2.50\,\text{Myr}) * (0.07/\text{Gyr})}\right) \approx 0.52\,\text{Gyr}
 $$
 
 About 500 million years...
 This might be a few generations of human beings.
 
-If we used the first a it would just be $2.50 Myr$, about the same as just using special relativity.
-We can see that exptected the long term de Sitter expansion would make intergalactic travel truely impossible.
+If we used the first $a$, it would just be $2.50$ Myr, about the same as just using special relativity.
+We can see that, as expected, the long-term de Sitter expansion would make intergalactic travel truly impossible.
 
-Nevertheless, the time on the spaceship would be different from the coordinate $t$ time so perhaps the occupants wouldn't have to go through *that* many generations before arriving at their destination.
+Nevertheless, the time on the spaceship would be different from the coordinate $t$ time, so perhaps the occupants wouldn't have to go through *that* many generations before arriving at their destination.
 
 <!-- 
 
