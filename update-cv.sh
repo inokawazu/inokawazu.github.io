@@ -1,8 +1,10 @@
 #!/bin/env bash
 
-pushd static/brand-me-docs
+set -eu
 
-git pull
-cp -v build/* ..
+BMD_VERSION=$(curl -Ls -o /dev/null -w %{url_effective} https://github.com/inokawazu/brand-me-docs/releases/latest)
+BMD_VERSION=${BMD_VERSION##*/}
+printf "The version is %s\n" "$BMD_VERSION"
 
-popd
+curl -L --output static/cv.pdf https://github.com/inokawazu/brand-me-docs/releases/download/${BMD_VERSION}/cv.pdf
+curl -L --output static/publications.pdf https://github.com/inokawazu/brand-me-docs/releases/download/${BMD_VERSION}/publications.pdf
