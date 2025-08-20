@@ -1,5 +1,5 @@
 +++
-title = '5cmpersecond'
+title = '5cm Per Second'
 date = 2025-08-20
 math = true
 tags = ["physics"]
