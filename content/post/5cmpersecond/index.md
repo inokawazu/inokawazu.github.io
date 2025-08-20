@@ -1,7 +1,6 @@
 +++
 title = '5cmpersecond'
-date = 2025-08-15T15:45:32+09:00
-draft = true
+date = 2025-08-20
 math = true
 tags = ["physics"]
 +++
@@ -383,6 +382,14 @@ I leave it to the reader to play with other constants in the notebook.
 
 [^impossible]: Maybe impossible!
 [^differenk]: Notice the different proportionality constant, $k'$.
+
+# Conclusion
+
+It's possible with a more refined model and a clever choice of paramters can reproduce the 5 centimeters per second from the animated movie.
+Nevertheless, it's surprising to see how far one can get with the simple model presented in this blog post.
+Possible a next step would be to go full numerical make the petal full simulated as a 3D model with flexing and bending, interacting with air modeled as a fluid.
+One the other hand having a model which simple as possible and reproduces the the behavior of the sakura petals would be great to get.
+Possibly use a simple model can be derived and is more simple than the final model of this paper.
 
 # Further Reading:
 
