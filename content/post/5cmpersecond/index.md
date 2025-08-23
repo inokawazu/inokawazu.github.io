@@ -356,6 +356,7 @@ The parameters for the $72cm/s$ case are:
 $k/\sigma = 20.0 s^{-1}$, $g = 9.81 m/s^2$, $R = 1 cm$, $\alpha = 0.03$, $y_0 = 10.0$, and $k'/M = 4.0 s^{-1}$.  
 
 I leave it to the reader to play with other constants in the notebook.
+Note there is leftward drift in the petal descent but I am not sure what the cause might be: numerical in nature or otherwise.
 
 [^impossible]: Maybe impossible!
 [^different]: Notice the different proportionality constant, $k'$.
