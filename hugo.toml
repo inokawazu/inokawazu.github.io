@@ -25,9 +25,17 @@ ShowCodeCopyButtons = true
 [params.profileMode]
 enabled = true
 title = "Markus Pad"
-subtitle = "Welcome to my pad. I'm your host, Markus Amano, and I so glad you came. Please check out my humble blog. CV and professional stuff is below. About me, I am a postodoctoral fellow at Yamagata University. My currently research topic is modeling physics with the holographic principles derived from string theory. Personally, I enjoy interesting mathematical puzzles and games."
+subtitle = """
+Welcome to my pad.
+I'm your host, Markus Amano, and I so glad you came.
+Please check out my humble blog.
+CV and professional stuff is below.
+About me, I am a assistant professor at NIT Oyama College.
+My currently research topic is modeling physics with the holographic principles derived from string theory.
+Personally, I enjoy interesting mathematical puzzles and games.
+"""
 imageUrl = "img/me.jpg"
-imageTitle = "A sketch of Markus Amano."
+imageTitle = "Sketch of Markus Amano"
 imageWidth = 330 # 615 # 1430 # 2860
 imageHeight = 475 # 953 # 1907 # 3814 
 
