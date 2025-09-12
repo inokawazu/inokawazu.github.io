@@ -2,6 +2,7 @@
 title = 'Hanging Wave Chain'
 date = 2025-09-11T12:51:08+09:00
 math = true
+tags = ["physics"]
 +++
 
 Perusing [Reddit](https://www.reddit.com/) I found someone [asking about a hanging chain](https://www.reddit.com/r/PhysicsHelp/comments/1n8ymrz/what_is_this_effect_called/).
