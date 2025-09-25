@@ -1,6 +1,6 @@
 +++
 title = 'Infinite Resistor Grid'
-date = 2025-09-24T16:28:45+09:00
+date = 2025-09-25 14:12:02+09:00
 math = true
 tags = ["physics"]
 +++
