@@ -74,3 +74,7 @@ There's the famous approximation of $\pi$, $22/7$.
 If you're not too picky, you can use $355/113$, which gets you 6 digits of $\pi$ correctly.
 Our best approximation, $1146408/364913$, gets 11 digits.
 If we don't mind being mathematically imprecise, then moving $2/\pi$ would require you to move $22$ times to get close to the start.
+
+# Further Reading
+
+- [ The Indirect Inspiration ]( https://www.youtube.com/watch?v=GOcM9gDwQYY )
