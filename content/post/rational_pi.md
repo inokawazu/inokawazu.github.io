@@ -2,7 +2,6 @@
 title = 'Rational π'
 date = 2025-11-07T21:34:56+09:00
 math = true
-draft = true
 tags = [ "programming", "math" ]
 +++
 
