@@ -2,7 +2,6 @@
 title = 'Air Drag and the Time to Fall'
 date = 2025-11-11T21:22:21+09:00
 math = true
-draft = true
 tags = ["physics", "math", "reddit"]
 +++
 
