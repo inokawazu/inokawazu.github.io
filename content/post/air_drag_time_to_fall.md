@@ -42,7 +42,7 @@ $$
 The left side can be evaluated using the standard integral
 
 $$
-\int \frac{dx}{a + b x^2} = \frac{1}{\sqrt{-a b}} \arctanh\left(x \sqrt{\frac{b}{-a}}\right), \quad \text{if}\ a<0
+\int \frac{dx}{a + b x^2} = \frac{1}{\sqrt{-a b}} \mathrm{arctanh}\left(x \sqrt{\frac{b}{-a}}\right), \quad \text{if}\ a<0
 $$
 
 Thus, for our constants,
@@ -54,19 +54,19 @@ $$
 so
 
 $$
-\int \frac{dv}{-g + k v^2} = -\frac{1}{\sqrt{gk}} \arctanh\left( v \sqrt{\frac{k}{g}} \right)
+\int \frac{dv}{-g + k v^2} = -\frac{1}{\sqrt{gk}} \mathrm{arctanh}\left( v \sqrt{\frac{k}{g}} \right)
 $$
 
 giving
 
 $$
-t + C = -\frac{1}{\sqrt{gk}} \arctanh\left( v \sqrt{\frac{k}{g}} \right)
+t + C = -\frac{1}{\sqrt{gk}} \mathrm{arctanh}\left( v \sqrt{\frac{k}{g}} \right)
 $$
 
 Applying the initial condition $v(0) = 0$ gives $C = 0$. So:
 
 $$
-t = -\frac{1}{\sqrt{gk}} \arctanh\left( v \sqrt{\frac{k}{g}} \right)
+t = -\frac{1}{\sqrt{gk}} \mathrm{arctanh}\left( v \sqrt{\frac{k}{g}} \right)
 $$
 
 Solving for $v$ gives
@@ -136,7 +136,7 @@ This is the **exact analytic time to reach the ground**.
 **Small $hk$ (weak drag):**
 
 Expand $\mathrm{arccosh}(e^{hk})$ around small $hk$.
-Recall that for small $x$, $\arccosh(1 + x) \approx \sqrt{2x}$, and $e^{hk} \approx 1 + hk$. So,
+Recall that for small $x$, $\mathrm{arccosh}(1 + x) \approx \sqrt{2x}$, and $e^{hk} \approx 1 + hk$. So,
 
 $$
 \mathrm{arccosh}(e^{hk}) \approx \sqrt{2hk}
@@ -162,7 +162,7 @@ $$
 \cosh(x) \sim \frac{1}{2} e^{x}
 $$
 
-so $\arccosh(e^{hk}) \approx hk + \ln 2$. Thus,
+so $\mathrm{arccosh}(e^{hk}) \approx hk + \ln 2$. Thus,
 
 $$
 t_f \approx \frac{hk + \ln 2}{\sqrt{gk}}
