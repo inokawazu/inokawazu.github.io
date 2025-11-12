@@ -287,8 +287,17 @@ $$
 $$
 
 $$
-\implies t_f = \frac{1}{\sqrt{g k}} \left( \cosh^{-1}\left(\frac{ e^{ k y_0 } }{ \sqrt{ 1 - \frac{ k v_0^2 }{ g } } } \right ) + \mathrm{arctanh}\left( \sqrt{ \frac{k}{g} } v_0 \right) \right)
+\implies  t_f  = \frac{1}{\sqrt{gk}} \left( \cosh^{-1}(e^{k y_0}) + \mathrm{arctanh}\left(\sqrt{\frac{k}{g}} v_0\right) \right)
 $$
+
+On might notice that this equation is ill defined for speed that are more than the terminal velocity.
+For thos speeds, effectively the $\mathrm{tanh}$'s become $\mathrm{coth}$'s
+
+$$
+\implies  t_f  = \frac{1}{\sqrt{gk}} \left( \cosh^{-1}(e^{k y_0}) + \mathrm{arccoth}\left(\sqrt{\frac{k}{g}} v_0\right) \right)
+$$
+
+At terminal velocity we have $t = y_0/\sqrt{g/k}$
 
 [^some]: Some math might be wrong 😛
 
