@@ -123,7 +123,7 @@ L \approx U_{\mathrm{min}} +  \frac { \epsilon^2 }2\left( \dot u_i M_{ij} \dot u
 
 Finding the characterisic frequencies, it's interesting to see that the higher frequencies, the lower the and less of the $w$'s you excite. The "higher" you are in the $w$'s the less frequent.
 
-![](/img/water_plug_modes.svg "Plug Oscilation Mode Heatmap illustration")
+![](/img/water_plug_modes.png "Plug Oscilation Mode Heatmap illustration")
 
 ## About $M_{ij}$
 
