@@ -7,21 +7,21 @@ draft = true
 
 # Hello Brachistochrone
 
-The brachistochrone is the curve that minimizes the time it takes for a frictionless object to slide along to reach from the top to the bottom across some horizontal span where the object starts at rest.
-For this article I want to introduce the brachistochrone[^1] from the aforementioned definition.
-The solution brachistochrone problem has been well covered and then some, so for the curious I have included [articles](#more-reading) for one to learn more!
+The brachistochrone is the curve that minimizes the time it takes for a frictionless object to slide along to reach from the top to the bottom across some horizontal span, where the object starts at rest.
+For this article, I want to introduce the brachistochrone[^1] from the aforementioned definition.
+The solution to the brachistochrone problem has been well covered and then some, so for the curious I have included [articles](#more-reading) for one to learn more!
 
 [^1]: see title
 
-# Describing up the Problem
+# Describing the Problem
 
-To start, let's start with the simple and original version of the Brachistochrone.
+To start, let's begin with the simple and original version of the brachistochrone.
 We have an object with mass $m$ that slides frictionlessly along a *smooth* path of our choosing.
 The path must start from an elevated point and must end somewhere horizontally $L$ away and $h$ below.
-Furthermore, there is a downwards gravitation force that acts on our object with a magnitude of $mg$.
-We can situate the beginning at the origin where the downwards direction is in the positive $y$ direction and moving horizontally (towards the goals) is the positive $x$ direction.
-So in our $x$-$y$ coordinates the end is at $(L, h)$.
-Note: that aslong as our path is only in our $x$-$y$, we do not have to worry about the third "$z$" direction.
+Furthermore, there is a downward gravitational force that acts on our object with a magnitude of $mg$.
+We can situate the beginning at the origin, where the downward direction is in the positive $y$ direction and moving horizontally (towards the goal) is the positive $x$ direction.
+So in our $x$-$y$ coordinates, the end is at $(L, h)$.
+Note that as long as our path is only in our $x$-$y$ plane, we do not have to worry about the third "$z$" direction.
 Our force can be written as $\vec F_g = mg\hat y$.
 
 There is a nice way to solve this via [energy conservation](https://en.wikipedia.org/wiki/Energy_conservation) and [calculus of variations](https://en.wikipedia.org/wiki/Calculus_of_variations).
@@ -40,12 +40,12 @@ This gives two differential equations of motion.
     \end{aligned}
 \end{equation}
 
-Multiplying the top and bottom by $\frac{dx}{dt}$ and $\frac{dy}{dt}$ respectively, we find we can rewrite the equations as total derivatives of time!
+Multiplying the top and bottom equations by $\frac{dx}{dt}$ and $\frac{dy}{dt}$ respectively, we find we can rewrite the equations as total derivatives with respect to time.
 
 \begin{equation}
     \begin{aligned}
         m \frac{d^2 x}{{dt}^2}\frac{dx}{dt} &= 0\\\\
-        \\left(m \frac{d^2 y}{{dt}^2}\frac{dy}{dt} - mg \frac{dy}{dt}\\right) &= 0\\\\
+        \left(m \frac{d^2 y}{{dt}^2}\frac{dy}{dt} - mg \frac{dy}{dt}\right) &= 0\\\\
     \end{aligned}
 \end{equation}
 
@@ -58,19 +58,19 @@ and then
     \end{aligned}
 \end{equation}
 
-These equations are nice, the conservations of energy and momentum, but these equations described *unconstrained* motion.
-Also, worse yet, if we just used these to look at the motion of the object, it would just drop unable to move horizontally reaching the goal.
+These equations are nice—the conservation of energy and momentum—but they describe *unconstrained* motion.
+Also, worse yet, if we just used these to look at the motion of the object, it would simply drop, unable to move horizontally to reach the goal.
 We need to constrain the motion of our body.
 In practice, this can be implemented by setting $y$ to be a function of $x$.
-So we write $y$ as $y = f(x)$ for some smooth function of $f$.
-So our object must travel along a long traces out a curve by (x, f(x)).
+So we write $y$ as $y = f(x)$ for some smooth function $f$.
+Thus, our object must travel along a path that traces out a curve given by $(x, f(x))$.
 To enforce this condition, we can introduce constraint forces.
-Let's look at the second equation of motion with unkown constraint force $\vec K$.
-To make progress, let's write our constraint as a equation that must be satisfied, $y - f(x) = 0$.
-Notice that $y - f(x) = 0$ is one of many curves of a whole family of curves $y - f(x) = w$.
+Let's look at the second equation of motion with an unknown constraint force $\vec K$.
+To make progress, let's write our constraint as an equation that must be satisfied: $y - f(x) = 0$.
+Notice that $y - f(x) = 0$ is one of many curves in a whole family of curves $y - f(x) = w$.
 These curves are parameterized by $w$, which can be taken as a new coordinate.
-$y = w + f(x)$ where $w = 0$ is but just one special case.
-The role of the constraint force is to disallow motion in the $w$ direction, similar to the normal force on an incline plane.
+We have $y = w + f(x)$, where $w = 0$ is just one special case.
+The role of the constraint force is to disallow motion in the $w$ direction, similar to the normal force on an inclined plane.
 
 \begin{equation}
     dy - f' dx = dw
@@ -88,13 +88,13 @@ The role of the constraint force is to disallow motion in the $w$ direction, sim
     \hat w = \frac 1{\sqrt{1 + f'^2}}(\hat y - f'\hat x)
 \end{equation}
 
-Our contraints enforces no motion in the perpedicular direction, $w$, so $\dot w = 0$.
-This is equivalent to $\dot y - f'\dot x = 0 \implies \dot y = f'\dot x$ linking $x$'s motion to $y$'s motion.
+Our constraint enforces no motion in the perpendicular direction, $w$, so $\dot w = 0$.
+This is equivalent to $\dot y - f'\dot x = 0 \implies \dot y = f'\dot x$, linking $x$'s motion to $y$'s motion.
 So now there is only motion in the $u$ direction.
 Recall that the power a force provides is given by $P = \int v\dot F$.
-Since $\dot w = 0$, there is not power (change energy) from our constraint force.
-This allows use to just consider all the other forces which are conservative.
-So we now consider the unchanging total energy, E.
+Since $\dot w = 0$, there is no power (change in energy) from our constraint force.
+This allows us to just consider all the other forces, which are conservative.
+So we now consider the unchanging total energy, $E$.
 
 \begin{equation}
     \begin{aligned}
@@ -105,12 +105,12 @@ So we now consider the unchanging total energy, E.
     \end{aligned}
 \end{equation}
 
-So we have a explicit expression for the speed $|v|$.
-Calculating the time total time we use the integral of the time differentials of the object's journey, $T = \int dt$.
-$dt$ can related to dispacement by $\vec v dt = d\vec r$.
+So we have an explicit expression for the speed $|v|$.
+To calculate the total time, we use the integral of the time differentials of the object's journey, $T = \int dt$.
+The differential $dt$ can be related to displacement by $\vec v\, dt = d\vec r$.
 Taking the magnitude and solving for $dt$, we have $dt = \frac{dr}{|v|}$.
-Explicitly, the differential dispacement magnitude is $dr = \sqrt{dx^2 + dy^2}$.
-With the constraint, this is can be simplifyed to only depend on $dx$ where 
+Explicitly, the differential displacement magnitude is $dr = \sqrt{dx^2 + dy^2}$.
+With the constraint, this can be simplified to only depend on $dx$, where
 
 \begin{equation}
     \begin{aligned}
@@ -128,15 +128,15 @@ So our time integral becomes
     \end{aligned}
 \end{equation}
 
-Since we are starting at the orgin at rest our energy vanishes, $E = 0$.
+Since we are starting at the origin at rest, our energy vanishes: $E = 0$.
 
 \begin{equation}
     T = \int \frac{\sqrt{1 + f'^2}}{2gf} dx
 \end{equation}
 
-So now our problem reduces to finding the constraint function $f$ such that $T$ is minimal.
-From calculus of variations we can use the [Beltrami Identity](https://en.wikipedia.org/wiki/Beltrami_identity).
-This reduces our integral problem to a first order boundary value problem for $f$.
+So now our problem reduces to finding the constraint function $f$ such that $T$ is minimized.
+From calculus of variations, we can use the [Beltrami Identity](https://en.wikipedia.org/wiki/Beltrami_identity).
+This reduces our integral problem to a first-order boundary value problem for $f$.
 
 \begin{equation}
     \frac{1}{2g}\frac{1}{f\sqrt{1+f'^2}} = C
@@ -155,7 +155,7 @@ We can rewrite the equation
     \end{aligned}
 \end{equation}
 
-Using seperation of variables we can solve for $f$
+Using separation of variables, we can solve for $f$.
 
 \begin{equation}
     \begin{aligned}
@@ -168,7 +168,7 @@ Using seperation of variables we can solve for $f$
     \end{aligned}
 \end{equation}
 
-Note the boundary conditions where the object must end at $(L, h)$ and start at the origin.
+Note the boundary conditions: the object must end at $(L, h)$ and start at the origin.
 We can set $C$ and $K$ to satisfy these conditions.
 These conditions imply
 
@@ -179,26 +179,27 @@ These conditions imply
     \end{aligned}
 \end{equation}
 
-We must take the positive solution for $f$ to remain positive (ie to avoid imaginary energies)
+We must take the positive solution for $f$ to remain positive (i.e., to avoid imaginary energies),
 so
-%
+
 \begin{equation}
     f = \frac{\sqrt{L (h^2 + L (L-x)) x}}{L}
 \end{equation}
 
-Replacing $f$ with $y$ we and squaring we find the following
+Replacing $f$ with $y$, and squaring, we find the following:
 
 \begin{equation}
     y^{2}L^{2}=L(h^{2}+L(L-x))x
 \end{equation}
 
-Completing the square we find
+Completing the square, we find
 
 \begin{equation}
     y^{2} + \left( x - \frac{h^{2} + L^{2}}{2L} \right)^{2} = \frac{(h^{2} + L^{2})^{2}}{4L^{2}}
 \end{equation}
 
-This is an equation for a circule with radius $R = \frac{\sqrt{(h^{2} + L^{2})^{2}}}{2L}$.
+This is an equation for a circle with radius $R = \frac{\sqrt{(h^{2} + L^{2})^{2}}}{2L}$.
+
 
 # More Reading
 
