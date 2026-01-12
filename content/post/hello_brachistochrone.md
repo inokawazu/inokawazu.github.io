@@ -101,7 +101,7 @@ So we now consider the unchanging total energy, $E$.
         E &= \frac m2 v \cdot v - mgy\\\\
         E &= \frac m2 v^2 - mgy\\\\
         2mE + 2gy &= v^2\\\\
-        |v| &= 2mE + 2gy\\\\
+        |v| &= \sqrt{2E/m + 2gy}\\\\
     \end{aligned}
 \end{equation}
 
@@ -124,22 +124,38 @@ So our time integral becomes
 \begin{equation}
     \begin{aligned}
         T &= \int \frac{\sqrt{1 + f'^2}}{|v|} dx \\\\
-        T &= \int \frac{\sqrt{1 + f'^2}}{2mE + 2gf} dx \\\\
+        T &= \int \frac{\sqrt{1 + f'^2}}{\sqrt{2E/m + 2gf}} dx \\\\
     \end{aligned}
 \end{equation}
 
 Since we are starting at the origin at rest, our energy vanishes: $E = 0$.
 
 \begin{equation}
-    T = \int \frac{\sqrt{1 + f'^2}}{2gf} dx
+    T = \int \frac{\sqrt{1 + f'^2}}{\sqrt{2 g f}} dx
 \end{equation}
+
+<!-- 
+
+$Assumptions = f[x] > 0 && g > 0
+
+lag = Sqrt[(1 + f'[x]^2)/(2g f[x])]//FullSimplify
+
+eom = lag - f'[x] D[lag, f'[x]] == C//FullSimplify
+eom//TeXForm
+
+f'[x]/.Last@Solve[eom, f'[x]]//FullSimplify
+finte = 1/%//TeXForm
+
+Integrate[finte/.{f[x] -> f}, f]
+
+-->
 
 So now our problem reduces to finding the constraint function $f$ such that $T$ is minimized.
 From calculus of variations, we can use the [Beltrami Identity](https://en.wikipedia.org/wiki/Beltrami_identity).
 This reduces our integral problem to a first-order boundary value problem for $f$.
 
 \begin{equation}
-    \frac{1}{2g}\frac{1}{f\sqrt{1+f'^2}} = C
+    \frac{1}{\sqrt{2} \sqrt{g f(x) \left(f'(x)^2+1\right)}}=C
 \end{equation}
 
 where $C$ is some constant.
@@ -147,59 +163,207 @@ where $C$ is some constant.
 We can rewrite the equation
 
 \begin{equation}
-    \begin{aligned}
-        \frac{1}{f^2} &= C^2(1+f'^2) \\\\
-        \frac{1}{C^2 f^2} - 1 &= f'^2 \\\\
-        f' &= \sqrt{ \frac{1}{C^2 f^2} - 1 } \\\\
-        \frac{f'}{\sqrt{ \frac{1}{C^2 f^2} - 1}} &= 1 \\\\
-    \end{aligned}
+    f'\frac{C}{\sqrt{\frac{1}{2 g f(x)}-C^2}} = 1
 \end{equation}
+
+<!-- \begin{equation} -->
+<!-- \begin{aligned} -->
+<!--         \frac{1}{f^2} &= C^2(1+f'^2) \\\\ -->
+<!--         \frac{1}{C^2 f^2} - 1 &= f'^2 \\\\ -->
+<!--         f' &= \sqrt{ \frac{1}{C^2 f^2} - 1 } \\\\ -->
+<!--         \frac{f'}{\sqrt{ \frac{1}{C^2 f^2} - 1}} &= 1 \\\\ -->
+<!--     \end{aligned} -->
+<!-- \end{equation} -->
 
 Using separation of variables, we can solve for $f$.
 
 \begin{equation}
     \begin{aligned}
-        \int \frac{df}{\sqrt{ \frac{1}{C^2 f^2} - 1}} &= \int_0^x dx \\\\
-        \int \frac{C f df}{\sqrt{ 1 - C^2 f^2}}  &= \int_0^x dx \\\\
-        \int\frac{\frac C2 d(f^2)}{\sqrt{ 1 - C^2 f^2}}  &= x - K \\\\
-        \frac C2 \frac{2}{-C^2}\sqrt{ 1 - C^2 f^2} &= x - K \\\\
-        \sqrt{ 1 - C^2 f^2} &= -C(x - K) \\\\
-        f &= \sqrt{ 1 - C^2 (x - K)^2 }/C \\\\
+        \int df\frac{C}{\sqrt{\frac{1}{f}-C^2}} &= \int dx \\\\
+        \int df\frac{C}{\sqrt{\frac{1}{f}-C^2}} &= x + K \\\\
+        \int df C \sqrt{\frac{f}{1-fC^2}} &= x + K \\\\
+        &\text{set $f = (a u - b)/C^2$}\\\\
+        \int a du/C^2 C \sqrt{\frac{(a u - b)/C^2}{1-(a u - b)}} &= x + K \\\\
+        \int a du/C^2 \sqrt{\frac{a u - b}{1-a u + b}} &= x + K \\\\
+        &\text{set $b = -1/2$ and $a = 1/2$}\\\\
+        \int \frac{ du }{2C^2} \sqrt{\frac{1+u}{1-u}} &= x + K \\\\
+        \int \frac{ du }{2C^2} \sqrt{\frac{1+u}{1-u}} &= x + K \\\\
+        &\text{set $u = \cos \theta$}\\\\
+        \int \frac{ d\theta }{2C^2} (-\sin(\theta)\cot(\theta/2)) &= x + K \\\\
+        \int \frac{ d\theta }{2C^2} (-2\sin(\theta/2)\cos(\theta/2)\cot(\theta/2)) &= x + K \\\\
+        -\frac 1{C^2}\int  d\theta \sin^2(\theta/2) &= x + K \\\\
+        \frac 1{2C^2}( \sin(\theta) - \theta) &= x + K \\\\
     \end{aligned}
 \end{equation}
 
-Note the boundary conditions: the object must end at $(L, h)$ and start at the origin.
-We can set $C$ and $K$ to satisfy these conditions.
-These conditions imply
+<!-- 
+
+Integrate[Sqrt[( 1+u )/(1-u)], u]//FullSimplify
+FullSimplify[%/.{u -> Cos[theta]}, Element[theta, Reals]]
+
+Integrate[-Sin[theta/2]^2, theta]
+
+-->
+
+Here we have $x$ parameterized by $\theta$.
+Taking the start to be at $\theta = 0$, we see that $K=0$ and 
+Also we can negate $\theta \rightarrow - \theta$ such that $x$ is increasing with $\theta$.
 
 \begin{equation}
     \begin{aligned}
-        C &= \frac {2L}{h^2 + L^2} \\\\
-        K &= \frac {h^2 + L^2}{2 L} \\\\
+        x &= \tilde C (\theta - \sin(\theta))\\\\
+        y &= \tilde C (1- \cos(\theta))\\\\
     \end{aligned}
 \end{equation}
 
-We must take the positive solution for $f$ to remain positive (i.e., to avoid imaginary energies),
-so
+The end theta and $\tilde C$ can be choosen such that the curve intersects point $(L, h)$.
+
+<!-- 
+
+Solve[{L == C (Sin[theta] - theta), h == C (Cos[theta] - 1)}, {C, theta}]
+
+-->
+
+# A Light Generalization
+
+We can imagine exerting our object under another force.
+Others have done this generization to introduce frictional forces and one over r squared forces (cf [ more reading ](#more-reading)).
+For a first foray let's take our gravitational force to be a general conservative force with a potential, $U(\vec r)$.
 
 \begin{equation}
-    f = \frac{\sqrt{L (h^2 + L (L-x)) x}}{L}
+    |v| = \sqrt{\frac{2E-2U}{m}}
 \end{equation}
 
-Replacing $f$ with $y$, and squaring, we find the following:
+The total time can be now be calculated as
 
 \begin{equation}
-    y^{2}L^{2}=L(h^{2}+L(L-x))x
+    T = \int dr \sqrt{\frac{m}{2E-2U}}
 \end{equation}
 
-Completing the square, we find
+## The Simple Harmonic Taco Bowl
+
+Let's say that you have a taco shaped parabolic bowl[^bowl] where you let's it go from up along the bowl to roll back down and up some other point.
+So horizontally we start the ball at $(x_i, y_0)$ and end it at $(x_i, y_0)$.
+The profile of the bowl can be modeled with this height function $z = \frac k 2 y^2$ where have situated the yaxis to be alinged with the lower ridge of the bowl and the $z$ direction to point upwards.
+Implicity our object now is constrained to the surface, so choosing it's motion along the x-y plane sufficies to know it's vertical location.
+Like before, we can constrain, $y$ with respect to $x$ as $y(x)$ as [abuse of notation](https://www.reddit.com/r/mathmemes/comments/13yjppt/abuse_of_notation/).
+
+These two constraints allows us to write the magnitude of the displacement as 
 
 \begin{equation}
-    y^{2} + \left( x - \frac{h^{2} + L^{2}}{2L} \right)^{2} = \frac{(h^{2} + L^{2})^{2}}{4L^{2}}
+    dr = \sqrt{1 + \frac{dz}{dx} + \frac{dy}{dx}} dx
 \end{equation}
 
-This is an equation for a circle with radius $R = \frac{\sqrt{(h^{2} + L^{2})^{2}}}{2L}$.
+It looks like $\frac{dz}{dx} = 0$ but recall that $y$ also depends on $x$ so we have to chain rule here.
 
+\begin{equation}
+    \begin{aligned}
+        dr &= \sqrt{1 + \frac{dz}{dy}\frac{dy}{dx} + \frac{dy}{dx}} dx \\\\
+        dr &= \sqrt{1 + k y \frac{dy}{dx} + \frac{dy}{dx}} dx \\\\
+        dr &= \sqrt{1 +  (k y + 1)y'} dx \\\\
+    \end{aligned}
+\end{equation}
+
+The gravitational potential then is $U = mgz = \frac{mgk}{2} y^2$
+Note that the sign of the potential is now different since $z$ is pointing downwards.
+So we can write the total time functional as
+
+\begin{equation}
+    T = \sqrt{m} \int \sqrt{\frac{1 +  (k y + 1)y'}{2E - mgk y^2}} dx
+\end{equation}
+
+Since we are dropping from rest, the energy must be set to $E = \frac{mgk}{2} y_0^2$ so we can write the final expression for $T$ as
+
+\begin{equation}
+    T = \frac{1}{\sqrt{gk}} \int \sqrt{\frac{1 +  (k y + 1)y'}{y_0^2 - y^2}} dx
+\end{equation}
+
+Using the Beltrami identity we can again derive the differential equation for $y(x)$.
+
+\begin{equation}
+    \frac{(k y+1) y'+2}{2 \sqrt{\left(y_0^2-y^2\right) \left((k y+1) y'+1\right)}}=C
+\end{equation}
+
+Note that since there is corresponding movement in the $z$ direction, this forces additional terms in our ODE.
+IE fast movement along $y$ accompanies rapid changes in height.
+Solving for $y'$ we can then use seperation of variables to integrate for $y$.
+
+$$
+    \int \frac{1}{2} \left(\frac{\sqrt{\left(y^2-y_0^2\right) (C k y+C)^2 \left(C^2 y^2-C^2 y_0^2+1\right)}}{-C^2 y^2+C^2 y_0^2-1}-k y-1\right) dy = x + K
+$$
+
+This integral is obviously non-trivial. 
+To make any headway, let's look at a special case where $C = 0$.
+Our integral equation then becomes>
+
+\begin{equation}
+    \begin{aligned}
+        \int \frac{-k y - 1}{2} dy &= x + K\\\\
+        \frac 12 \left(-k \frac 12 y^2 - y \right) &= x + K\\\\
+    \end{aligned}
+\end{equation}
+
+[wlog](https://en.wikipedia.org/wiki/Without_loss_of_generality) we can set $x_0 = 0$ so
+
+
+\begin{equation}
+    K = \left(-\frac k4 y_0^2 - \frac 12 y_0 \right)
+\end{equation}
+
+We could solve for $y$ here but instead, we can just switch our path's paramter to be $y$ instead.
+So we have
+
+\begin{equation}
+    \begin{aligned}
+        x &= \frac k4 (y_0^2 - y^2) + \frac 12 (y_0-y)\\\\
+        z &= \frac k2 y^2\\\\
+    \end{aligned}
+\end{equation}
+
+So an optimal path is parabolic.
+There is a maximum $x$ at
+
+\begin{equation}
+    x = \frac{(y_0 k+1)^2}{4 k}
+\end{equation}
+
+which is not at the bottom of the taco bowl surprisingly.
+However, since we set $C=0$, we actually cannot solve the problem to set the final $x$ or $y$.
+Though, we can be confident that $|y|\leq |y_0|$ since energy there vanishes.
+If we were to solve this problem numerically, this could help us bound the problem to find $C$ such that our path ends at a certain point.
+
+<!-- 
+
+$Assumptions = y[x]^2 < a^2 && k> 0
+
+lag = Sqrt[( 1 + (k y[x] + 1) y'[x])/(a^2 - y[x]^2)]
+
+eom = lag - y'[x] D[lag, y'[x]] == C//FullSimplify
+%//TeXForm
+
+y'[x] /. ypRule//FullSimplify
+1/%[[1]]//FullSimplify//ReplaceAll[y[x] -> t]//TeXForm
+1/%%[[2]]//FullSimplify//ReplaceAll[y[x] -> t]//TeXForm
+
+ypRule = Solve[eom, y'[x]]//FullSimplify
+y'[x]/.%
+1/%//FullSimplify//TeXForm
+1/%%/.{y[x]->t}//FullSimplify
+TeXForm[%[[1]]]
+TeXForm[%%[[2]]]
+
+eom/.{C->0}
+1/y'[x]/.First@Solve[%, y'[x]]
+yc0sol = Integrate[%,{y[x], a, y}]//FullSimplify
+First@Solve[% == x, y, Assumptions -> True]
+y/.%//TeXForm
+
+a^2 k^2+2 a k-4 k x+1 == 0
+x/.First@Solve[%, x, Assumptions -> True]//FullSimplify//TeXForm
+
+-->
+
+[^bowl]: For some reason... But in all seriousness, it's just a half pipe!
 
 # More Reading
 
