@@ -227,14 +227,14 @@ Solve[{L == C (Sin[theta] - theta), h == C (Cos[theta] - 1)}, {C, theta}]
 # A Light Generalization
 
 We can imagine exerting our object under another force.
-Others have done this generization to introduce frictional forces and one over r squared forces (cf [ more reading ](#more-reading)).
+Others have done this generalization to introduce frictional forces and one over r squared forces (cf [ more reading ](#more-reading)).
 For a first foray let's take our gravitational force to be a general conservative force with a potential, $U(\vec r)$.
 
 \begin{equation}
     |v| = \sqrt{\frac{2E-2U}{m}}
 \end{equation}
 
-The total time can be now be calculated as
+The total time can now be calculated as
 
 \begin{equation}
     T = \int dr \sqrt{\frac{m}{2E-2U}}
@@ -242,19 +242,19 @@ The total time can be now be calculated as
 
 ## The Simple Harmonic Taco Bowl
 
-Let's say that you have a taco shaped parabolic bowl[^bowl] where you let's it go from up along the bowl to roll back down and up some other point.
+Let's say that you have a taco-shaped parabolic bowl[^bowl] where you let it go from up along the bowl to roll back down and up some other point.
 So horizontally we start the ball at $(x_i, y_0)$ and end it at $(x_i, y_0)$.
-The profile of the bowl can be modeled with this height function $z = \frac k 2 y^2$ where have situated the yaxis to be alinged with the lower ridge of the bowl and the $z$ direction to point upwards.
-Implicity our object now is constrained to the surface, so choosing it's motion along the x-y plane sufficies to know it's vertical location.
-Like before, we can constrain, $y$ with respect to $x$ as $y(x)$ as [abuse of notation](https://www.reddit.com/r/mathmemes/comments/13yjppt/abuse_of_notation/).
+The profile of the bowl can be modeled with this height function $z = \frac k 2 y^2$ where we have situated the y-axis to be aligned with the lower ridge of the bowl and the $z$ direction to point upwards.
+Implicitly our object now is constrained to the surface, so choosing its motion along the x-y plane suffices to know its vertical location.
+Like before, we can constrain $y$ with respect to $x$ as $y(x)$ as [abuse of notation](https://www.reddit.com/r/mathmemes/comments/13yjppt/abuse_of_notation/).
 
-These two constraints allows us to write the magnitude of the displacement as 
+These two constraints allow us to write the magnitude of the displacement as 
 
 \begin{equation}
     dr = \sqrt{1 + \frac{dz}{dx} + \frac{dy}{dx}} dx
 \end{equation}
 
-It looks like $\frac{dz}{dx} = 0$ but recall that $y$ also depends on $x$ so we have to chain rule here.
+It looks like $\frac{dz}{dx} = 0$ but recall that $y$ also depends on $x$ so we have to use the chain rule here.
 
 \begin{equation}
     \begin{aligned}
@@ -285,8 +285,8 @@ Using the Beltrami identity we can again derive the differential equation for $y
 \end{equation}
 
 Note that since there is corresponding movement in the $z$ direction, this forces additional terms in our ODE.
-IE fast movement along $y$ accompanies rapid changes in height.
-Solving for $y'$ we can then use seperation of variables to integrate for $y$.
+i.e. fast movement along $y$ accompanies rapid changes in height.
+Solving for $y'$ we can then use separation of variables to integrate for $y$.
 
 $$
     \int \frac{1}{2} \left(\frac{\sqrt{\left(y^2-y_0^2\right) (C k y+C)^2 \left(C^2 y^2-C^2 y_0^2+1\right)}}{-C^2 y^2+C^2 y_0^2-1}-k y-1\right) dy = x + K
@@ -294,7 +294,7 @@ $$
 
 This integral is obviously non-trivial. 
 To make any headway, let's look at a special case where $C = 0$.
-Our integral equation then becomes>
+Our integral equation then becomes
 
 \begin{equation}
     \begin{aligned}
@@ -310,7 +310,7 @@ Our integral equation then becomes>
     K = \left(-\frac k4 y_0^2 - \frac 12 y_0 \right)
 \end{equation}
 
-We could solve for $y$ here but instead, we can just switch our path's paramter to be $y$ instead.
+We could solve for $y$ here but instead, we can just switch our path's parameter to be $y$ instead.
 So we have
 
 \begin{equation}
