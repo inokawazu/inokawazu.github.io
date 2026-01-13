@@ -1,6 +1,6 @@
 +++
 title = 'Hello Brachistochrone'
-date = 2026-01-22T20:56:27+09:00
+date = 2026-01-12T20:56:27+09:00
 math = true
 +++
 
