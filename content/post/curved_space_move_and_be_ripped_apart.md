@@ -12,7 +12,7 @@ tags = ["math", "physics"]
 
 Knowing one's speed is important in daily life.
 A 60 km/hr car is much more dangerous than a stationary one.
-However, the physically important source of danger here is the relative difference in speed.
+However, the physically important source of danger here is the *difference* in speed.
 A 60 km/hr car is 60 km/hr faster than you, so any collision (resulting in a large and dangerous acceleration) would feel *not so* great.
 If we moved parallel to the car at the same speed, we would find that we could treat it just as a stationary car.
 Simply put, absolute speed (*movement*) is undetectable, but relative speed is.
@@ -21,21 +21,21 @@ This particular fact was first observed by [Galileo Galilei](https://en.wikipedi
 [Inside a ship, moving across calm water,](https://en.wikipedia.org/wiki/Galileo%27s_ship) if there were no windows, one could not know the ship was moving.
 Therefore, there is no *local* experiment that could detect this motion.
 So, this is why the principle of absolute speed's undetectability is called [Galilean Relativity](https://en.wikipedia.org/wiki/Galilean_invariance)[^galilean].
-Later on, Einstein realized that in nature, not only is absolute speed undetectable, but for all inertial observers the speed of light is a constant $c = 299,792,458$ m/s.
+Later on, Einstein realized that in nature, not only is absolute speed undetectable, but for all non-accelerating observers the speed of light is a constant $c = 299,792,458$ m/s.
 
 [^galilean]: Galilean relativity (and later the principle of relativity) implies the conservation of momentum because it's fundamentally a symmetry of nature.
 
 # Curved Space
 
 In 1915, Einstein presented [his theory of relativity](https://en.wikipedia.org/wiki/Theory_of_relativity).
-According to his theory, gravity is not due to a gravitational field but to the curvature of space and time itself; space can curve in spatial directions or the temporal direction.
-Actually, the apparent gravitational force we experience every day is due to "time" curvature.
-Because spacetime is stiff, we don't experience "space" curvature.
-Putting aside the question of whether or not "space" curvature is physically obtainable, let's consider the consequence of living in a world with space curvature.
+According to his theory, gravity is not due to an invisible "force field," but due to the shape of space and time itself; space can bend in space-like directions or in the time-like direction.
+In fact, the apparent gravitational force we experience every day is mainly tied to how time behaves.
+Because spacetime is very rigid on everyday scales, we don't notice space itself being bent.
+Putting aside the question of whether or not "space" bending is physically obtainable, let's consider what would happen if we lived in a world where space itself was curved.
 
-## The Curvature and Geodesics
+## The Curvature and Straightest Paths
 
-For a spacetime with purely spatial curvature, we can write its metric tensor as below [^einstein].
+For a spacetime with only *spatial* curvature, we can write its distance rule (its "measuring formula") as below[^einstein].
 The $i,j,k,\ldots$ latin indices are spatial indices.
 
 [^einstein]: Using Einstein's index notation.
@@ -44,83 +44,84 @@ The $i,j,k,\ldots$ latin indices are spatial indices.
     g = -dt^2 + h_{ij} dx^i dx^j
 \end{equation}
 
-Here, the metric does not exert what we usually experience as gravity, since its time-time component is constant[^offdiag].
-Nevertheless, there is spatial curvature here encoded in the spatial metric, $h$.
-Since we are playing around here, we'll not be concerned with whether or not $h$ satisfies the Einstein field equations.
-For observers (point particles) in this spacetime, they follow geodesics.
-For these particular spacetimes, we can use the $t$ coordinate as the clock of observers.
-These geodesics can be solved for by solving the [geodesic equation](https://en.wikipedia.org/wiki/Geodesics_in_general_relativity), written as below.
+Here, the rule for measuring distances does not produce what we usually call gravity, since its time-time part is constant[^offdiag].
+Nevertheless, there is spatial curvature encoded in the spatial part, $h$.
+Since we are playing around here, we'll not be concerned with whether or not $h$ obeys Einstein's equations.
+Idealized test particles in this spacetime follow the "straightest possible" paths.
+For these particular spacetimes, we can use the $t$ coordinate as the particles' clock.
+Their paths can be found by solving the standard equation for "straightest possible motion," written as below.
 
-[^offdiag]: The off diagonal, time-space, components are zero as well.
+[^offdiag]: The mixed time-space terms are zero as well.
 
 \begin{equation}
     \frac{d^2 x^i}{dt^2} + \Gamma^i_{jk} \frac{dx^j}{dt}\frac{dx^k}{dt} = 0
 \end{equation}
 
-$\Gamma^i_{jk}$ here are the apparent inertial forces the point observer will experience from motion in this spacetime.
-Here $\frac{dx^j}{dt}$ are velocities in the Newtonian sense, while $\frac{d^2 x^i}{dt^2}$ is the acceleration.
-We can actually write this geodesic equation in the traditional Newtonian form as
+The $\Gamma^i_{jk}$ terms describe how the coordinates themselves "try to bend" your motion due to the curvature of space.
+Here $\frac{dx^j}{dt}$ are ordinary velocities, while $\frac{d^2 x^i}{dt^2}$ is the acceleration.
+We can rewrite this in a Newton-like form as
 
 \begin{equation}
     m \vec a  =  - m  \vec v^\top \Gamma^i \vec v
 \end{equation}
 
-The Christoffel symbol is now a force matrix.
+So the $\Gamma$ terms act like a velocity-dependent force.
 
 ## Absolute Velocity
 
-I mentioned before that the $\Gamma$ was an apparent inertial force.
-Similar forces arise in Newtonian mechanics which are genuine inertial forces, that is, a force that disappears in inertial frames[^inertial].
+I mentioned before that the $\Gamma$ terms behave like an "extra force."
+In everyday Newtonian physics, there are also extra forces that show up only because you chose a rotating or accelerating viewpoint; they disappear if you switch to a non-accelerating viewpoint[^inertial].
 So, one might wonder if that is possible here.
-Could we set inertial coordinates such that $\Gamma$ and the associated forces vanish?
-This is actually impossible to do; it is impossible to switch to any frame such that $\Gamma$ vanishes everywhere.
-One can see this by considering the fact that the Riemannian curvature tensor depends on the derivative and value of $\Gamma$.
-If our metric has a non-zero curvature tensor, $\Gamma$ must not vanish everywhere, so as not to lead to a contradiction.
-It is interesting to then note that, moving in such a space, one can *detect* how fast one is traveling by looking at one's accelerometer.
-This is true, really, because a real accelerometer would not be a point particle, and would experience tidal forces, causing it to measure a force.
+Could we pick coordinates so that $\Gamma$ (and the associated effects) vanish?
+You can always make them vanish at a *single point*, but you cannot make them vanish *everywhere* if space is truly curved.
+The reason is that real curvature is not just the presence of $\Gamma$, but how it changes from place to place.
+If the space has nonzero curvature, the $\Gamma$ terms cannot be zero everywhere.
 
-In the lingo of General Relativity, straight lines in spacetime are observers moving at a constant velocity.
-Any deviation from a straight line is then said to have acceleration; the larger the deviation, the larger the acceleration.
-The thing about curvature is that if you set two point observers to head in the same direction, but separated by some initial distance, curvature will either push them together[^positive] or apart[^negative].
-Realistic bodies have some volume, so their individual bits will naturally want to come together[^positive] or apart[^negative] as they move in space.
-This compression/stretching comes from the curvature and is represented by the Jacobi field (geodesic deviation).
+This leads to an interesting consequence: in such a space, motion itself can become detectable.
+By looking at an accelerometer, you could tell how fast you are moving.
+This is because a real accelerometer is not a point; it has size, and different parts of it would be pulled in slightly different ways (a "stretching/squeezing" effect), which registers as a force.
 
+In General Relativity language, the "straightest" paths correspond to constant-velocity motion.
+If you deviate from such a path, you have acceleration; the larger the deviation, the larger the acceleration.
+Curvature adds another twist: if you send two nearby particles in the same direction, but separated by some initial distance, the shape of space can make their separation shrink[^positive] or grow[^negative].
+Real objects have size, so different parts of the object naturally try to come together[^positive] or pull apart[^negative] as the object moves.
+This stretching/compression is captured by what is often called *geodesic deviation*.
 
 [^inertial]: Coordinates moving at constant speed and not accelerating.
 [^positive]: positive curvature
 [^negative]: negative curvature
 
-## The Jacobi Field
+## Relative Acceleration (Geodesic Deviation)
 
 We can approximate a 3D body as a small rod with some length $\delta x$, neglecting the other dimensions.
-This length being a vectorial quantity, it can be represented as $\delta x^i \frac{\partial}{\partial x^i}$.
-The Jacobi field, $A$, on such an object can be written as
+This length is a vector, so it can be represented as $\delta x^i \frac{\partial}{\partial x^i}$.
+The relative acceleration between nearby "straightest paths" can be written as
 
 \begin{equation}
     A^d = R^d{}_{abc} T^a T^b \delta x^c
 \end{equation}
 
-Here, $T$ is the direction of motion of either end of the object in spacetime.
-Since we are considering small scales, the $T$ on both sides is approximately the same.
+Here, $T$ is the direction of motion through spacetime.
+Since we are considering small scales, the $T$ for both ends is approximately the same.
 For our spacetime, we have $T^a = c\delta^a_0 + v^i \frac{\partial}{\partial x^i}$.
 
 \begin{equation}
     A^l = R^l{}_{ijk} v^i v^j \delta x^k
 \end{equation}
 
-We can flip the index (to make the meaning of $A$ clearer).
+We can swap indices (to make the interpretation clearer).
 
 \begin{equation}
     A^l = -R^l{}_{ikj} v^i \delta x^k v^j
 \end{equation}
 
-So, we can see this as the *relative* acceleration of the body's two ends.
-Multiply $A$ by a mass and then you have a force.
+So $A$ is the *relative* acceleration of the rod's two ends.
+Multiply $A$ by a mass and you get the corresponding force.
 
 ## Constant Curvature
 
-To get a feel for this relative acceleration, let's consider the case where $h$ is the metric of a space with constant curvature, $K$.
-The Riemann curvature tensor (spatial components) simplifies to
+To get a feel for this relative acceleration, let's consider the case where $h$ describes a space with constant curvature $K$.
+In that case, the spatial curvature takes a simple form:
 
 \begin{equation}
     R^l_{ikj} = K (\delta^l_k h_{ij} - \delta^l_j h_{ik})
@@ -132,24 +133,24 @@ So the relative acceleration simplifies to
     A^l = -K (\delta^l_k h_{ij} - \delta^l_j h_{ik}) v^i \delta x^k v^j = -K (\delta x^l v_j v^j - v_k \delta x^k v^l)
 \end{equation}
 
-There are two terms; taking our movement to be perpendicular to the length of the rod, we have $v_k \delta x^k = 0$.[^dotproduct]
+There are two terms; taking our motion to be perpendicular to the rod, we have $v_k \delta x^k = 0$.[^dotproduct]
 So our relative acceleration is
 
-[^dotproduct]: Because we are in a curved spacetime, "$v_k \delta x^k$" is a dot product essentially.
+[^dotproduct]: Because we are in a curved spacetime, "$v_k \delta x^k$" is essentially a dot product.
 
 \begin{equation}
     A^l = -K \delta x^l v_j v^j = -K \delta x^l |v|^2
 \end{equation}
 
-Taking our rod to have a mass of $m$, the force is roughly
+Taking our rod to have a mass $m$, the force is roughly
 
 \begin{equation}
     -mK \delta x^l |v|^2
 \end{equation}
 
-For positive curvature $K>0$, this force is squeezing/attractive!
-For negative curvature $K<0$, this force is stretching/repulsive!
-If we have a really curved space, this could cause massive forces and stress on bodies, even for small speeds.
+For positive curvature $K>0$, this force squeezes inward.
+For negative curvature $K<0$, this force stretches outward.
+If space were curved strongly enough, this could produce huge stresses on bodies—even at modest speeds.
 
 # Further Reading
 
