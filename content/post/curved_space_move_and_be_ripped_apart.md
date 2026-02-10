@@ -2,7 +2,6 @@
 title = 'Curved Space: Move and be Ripped Apart'
 date = 2026-02-10 21:14:52+09:00
 math = true
-draft = true
 tags = ["math", "physics"]
 +++
 
