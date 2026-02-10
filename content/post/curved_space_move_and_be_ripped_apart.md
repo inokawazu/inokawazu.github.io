@@ -123,7 +123,7 @@ To get a feel for this relative acceleration, let's consider the case where $h$ 
 In that case, the spatial curvature takes a simple form:
 
 \begin{equation}
-    R^l_{ikj} = K (\delta^l_k h_{ij} - \delta^l_j h_{ik})
+    R^l{}_{ikj} = K (\delta^l_k h_{ij} - \delta^l_j h_{ik})
 \end{equation}
 
 So the relative acceleration simplifies to
