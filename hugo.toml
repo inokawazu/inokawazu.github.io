@@ -43,9 +43,9 @@ imageHeight = 475 # 953 # 1907 # 3814
 name = "Blog"
 url = "/post"
 
-[[params.profileMode.buttons]]
-name = "iNSPIREHEP"
-url = "https://inspirehep.net/authors/1778034?ui-citation-summary=true"
+# [[params.profileMode.buttons]]
+# name = "iNSPIREHEP"
+# url = "https://inspirehep.net/authors/1778034?ui-citation-summary=true"
 
 [[params.profileMode.buttons]]
 name = "CV"
@@ -62,3 +62,11 @@ url = "https://github.com/inokawazu"
 [[params.socialIcons]]
 name = "Linkedin"
 url = "https://www.linkedin.com/in/markus-amano/"
+
+[[params.socialIcons]]
+name = "inspirehep"
+url = "https://inspirehep.net/authors/1778034?ui-citation-summary=true"
+
+[[params.socialIcons]]
+name = "arxiv"
+url = "https://arxiv.org/search/?searchtype=author&query=Amano%2C+M+A+G"
