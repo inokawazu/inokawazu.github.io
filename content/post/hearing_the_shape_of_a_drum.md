@@ -59,3 +59,4 @@ Naively, this would give us a yes answer to the question.
 - [Hearing the shape of a drum (Wikipedia)](https://en.wikipedia.org/wiki/Hearing_the_shape_of_a_drum)
 - [Spectral geometry]( https://en.wikipedia.org/wiki/Spectral_geometry )
 - [Isospectral or Homophonic](https://en.wikipedia.org/wiki/Isospectral)
+- [Wave Equation](https://en.wikipedia.org/wiki/Wave_equation)
